@@ -278,6 +278,7 @@ nav ul li a:hover {
 
 .profile-div img {
     width: 450px;
+    height: auto;
 }
 
 .about-info-div {
@@ -557,6 +558,7 @@ nav ul li a:hover {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+     background-attachment: fixed; 
 }
 
 .background-sc3::before {
@@ -709,7 +711,6 @@ nav ul li a:hover {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-     background-attachment: fixed; 
 }
 
 .progress-main-div::before {
@@ -726,11 +727,6 @@ nav ul li a:hover {
 
 
 .progress-main-div {
-    background-image: url(/Image/img-1.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-     background-attachment: fixed; 
     background-color: rgb(240, 240, 240); 
     padding: 15px 0;
     margin-top: 150px;
@@ -855,6 +851,145 @@ nav ul li a:hover {
 /*     SECTOR 4      */
 
 .sc4 {
+    margin-top: 150px;
+    padding: 80px;
     height: 100vh;
     width: 100%;
+    position: relative;
+    background-image: url(/Image/img-2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 100px 1fr;
+}
+
+.sc4::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #e2e2e2;
+    opacity: .95;
+}
+
+.send-msg {
+    grid-row: 1/2;
+    grid-column: 1/3;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.send-msg p {
+    font-family: 'Poppins',sans-serif;
+    font-weight: 600;
+    font-size: 28px;
+    color: #3d3d3d;
+}
+
+.send-msg p::before {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 1px;
+    left: 50%;
+    top: 24%;
+    background: #3d3d3d;
+    transform: translateX(-50%);
+}
+
+.contact-info {
+    margin-left: 40px;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: #3d3d3d;
+}
+
+.contact-social {
+    margin-left: 40px; 
+}
+
+.contact-social span{
+    margin: 8px;
+    transition: all .5s; 
+    cursor: pointer;
+}
+
+.contact-social span:hover {
+    color: black;
+}
+
+.contact-info-txt p{
+    margin: 20px 0;
+}
+
+.dobrac {
+    color: #777777;
+}
+
+.form {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    z-index: 1;
+    
+}
+
+.form form {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: flex-end;
+    margin-right: 20px;
+}
+
+.form form input{
+    margin: 20px 0;
+    height: 60px;
+    width: 400px;
+    border: 1px solid #7e7e7e;
+    border-radius: 8px;
+    padding: 10px;
+    font-family: 'Poppins',sans-serif;
+    font-size: 16px;
+}
+
+
+.form form button {
+    margin-top: 30px;
+   width: 150px;
+    height: 50px;
+    background: #afafaf;
+    border: 1px solid #afafaf;
+    border-radius: 5px;
+    color: #fff;
+    transition: all .5s;
+}
+
+.form form button:hover {
+    background: #808080;
+    
+}
+
+input:focus, input:focus{
+    outline: none;
+    -webkit-box-shadow: 0px 0px 3px 1px rgba(0,102,255,1);
+    -moz-box-shadow: 0px 0px 3px 1px rgba(0,102,255,1);
+    box-shadow: 0px 0px 3px 1px rgba(0,102,255,1);
+
+}
+
+button:focus {
+    outline: none;
+    -webkit-box-shadow: 0px 0px 3px 1px #808080;
+    -moz-box-shadow: 0px 0px 3px 1px #808080;
+    box-shadow: 0px 0px 3px 1px #808080;
 }
