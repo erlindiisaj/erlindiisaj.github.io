@@ -5,6 +5,11 @@
     box-sizing: border-box;
 }
 
+html, body {
+    overflow-x: hidden;
+    max-width: 100%;
+}
+
 header {
     background-image: url(/portfolio/Image/Background@2x.png);
     background-size: cover;
