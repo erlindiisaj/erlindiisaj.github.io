@@ -159,7 +159,7 @@ let isY = false;
 let executed = false;
 window.addEventListener('scroll', () => {
 	const scrollY = window.scrollY;
-	if (scrollY >= 1500 && scrollY <= 2000) {
+	if (scrollY >= 1200 && scrollY <= 2000) {
 		isY = true; 
 	} else {
 		isY = false;
