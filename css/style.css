@@ -11,7 +11,7 @@ html, body {
 }
 
 header {
-    background-image: url(/erlindiisaj.github.io/Image/Background@2x.png);
+    background-image: url(/erlindiisaj.github.io/Image/Background@2x.jpg);
     background-size: cover;
     height: 100vh;
     background-position: center;
@@ -559,7 +559,7 @@ nav ul li a:hover {
     justify-content: space-around;
     align-items: center;
     position: relative;
-    background-image: url(/erlindiisaj.github.io/Image/sc3.png);
+    background-image: url(/erlindiisaj.github.io/Image/sc3.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -706,17 +706,7 @@ nav ul li a:hover {
 
 
 
-.background-sc3 {
-    height: 300px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    position: relative;
-    background-image: url(/erlindiisaj.github.io/Image/sc3.png);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
+
 
 .progress-main-div::before {
     content: '';
