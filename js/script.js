@@ -176,6 +176,25 @@ window.addEventListener('scroll', () => {
 })
 
 
+$(document).ready(function() {
+		const scrollY = window.scrollY;
+		if (scrollY >= 1050 && scrollY <= 2000) {
+			isY = true; 
+		} else {
+			isY = false;
+		}
+		if (!executed) {
+			if (isY) {
+				executed = true;
+				animateValue("counter", 0, 448, 3000);
+				animateValue("counter1", 0, 50, 3000);
+				animateValue("counter2", 2790, 3540, 3000);
+				animateValue("counter3", 0, 20, 3000);
+			}
+		}
+   });
+
+
 $(document).ready(function(){
       linkScroll = $('.scroll');
   
@@ -183,6 +202,8 @@ $(document).ready(function(){
       e.preventDefault();
       $('body, html').animate({
          scrollTop: $(this.hash).offset().top
-      }, 500);
+      }, 900);
    });
 });
+
+
