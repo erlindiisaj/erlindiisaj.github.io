@@ -22,6 +22,8 @@
 
     <!-- Main CSS -->
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/res.style.css">
+
 
     <!-- End CSS SECTOR -->
 
@@ -34,10 +36,13 @@
 
     <!-- NavBar -->
     <header>
-        <nav id="navbar">
+        <nav class="navbar" id="navbar">
             <div id='logo-div'class="logo">
                     <p id="logoP" class="opc1">EiSaj.</p>
             </div>
+            <span class="navbar-toggle" id="js-navbar-toggle">
+                <i id='fa-bars' class="fas fa-bars fa-lg"></i>
+            </span>
             <div class="nav-div">
                 <ul>
                     <li><a id="link1" class="scroll nav-link" href="#home">Home</a></li>
@@ -69,11 +74,11 @@
                     <div class=".presentation-div-p" id="text"></div><div id="cursor"></div>
             </div>
             <div class="social" data-aos-delay="1500" data-aos-duration="1300" data-aos="fade-up">
-                    <span><i class="fab fa-facebook-f fa-lg"></i></span>
-                    <span><i class="fab fa-twitter fa-lg"></i></span>
-                    <span><i class="fab fa-instagram fa-lg"></i></span>    
-                    <span><i class="fab fa-github fa-lg"></i></span>
-                    <span><i class="fab fa-google-plus-g fa-lg"></i></span>
+                    <span><i id='fb' class="network fab fa-facebook-f fa-lg"></i></span>
+                    <span><i id='tw' class="network fab fa-twitter fa-lg"></i></span>
+                    <span><i id='in' class="network fab fa-instagram fa-lg"></i></span>    
+                    <span><i id='git' class="network fab fa-github fa-lg"></i></span>
+                    <span><i id='goo' class="network fab fa-google-plus-g fa-lg"></i></span>
             </div>
         </div>
     </section>

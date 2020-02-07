@@ -1,0 +1,59 @@
+@media screen and (max-width:1024px) {
+    .sc1 {
+        grid-template-columns: 10% 1fr 1fr 10%;
+    }
+
+    .greeting-div p {
+        font-size: 28px;
+    }
+
+    #text {
+        font-size: 18px;
+    }
+
+    .social span {
+        height: 30px;
+        width: 30px;
+    }
+
+
+}
+
+
+@media screen and (max-width:768px) {
+
+    .fa-bars {
+        opacity: 1;
+    }
+
+    .greeting-div p {
+        font-size: 20px;
+    }
+
+    .sc1 {
+        grid-template-columns: 10% 1fr 10%;
+    }
+
+    .sc1-main-div {
+        grid-column: 2/3;
+        align-items: center;
+    }
+
+    #text {
+        font-size: 10px;
+    }
+    
+    .nav-div {
+        display: none;
+    }
+    .logo p {
+        color: white;
+        opacity: 1;
+    }
+
+    .logo-p-1 {
+        color: black;
+    }
+   
+}
+

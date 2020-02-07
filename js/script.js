@@ -1,12 +1,18 @@
 window.onscroll = function() {myFunction()};
-
 var navbar = document.getElementById("navbar");
 const link1 = document.getElementById('link1');
 const link2 = document.getElementById('link2');
 const link3 = document.getElementById('link3');
 const link4 = document.getElementById('link4');
 const logo = document.getElementById('logo-div');
-const logoP = document.getElementById('logoP')
+const logoP = document.getElementById('logoP');
+const icon = document.getElementById('fb')
+const icon1 = document.getElementById('tw')
+const icon2 = document.getElementById('in')
+const icon3 = document.getElementById('git')
+const icon4 = document.getElementById('goo')
+const bars = document.getElementById('fa-bars')
+
 
 
 var sticky = navbar.offsetTop;
@@ -26,7 +32,11 @@ const addClasses = () => {
   link3.classList.add("link-sticky");
   link4.classList.add("link-sticky");
   logoP.classList.remove('opc1');
-  logo.classList.add('logo');
+  bars.classList.add('fa-bars-1');
+  logoP.classList.add('logo-p-1')
+  
+  
+
 }
 
 const removeClasses = () => {
@@ -36,7 +46,9 @@ const removeClasses = () => {
   link3.classList.remove("link-sticky");
   link4.classList.remove("link-sticky");
   logoP.classList.add('opc1');
-  logo.classList.remove("logo");
+  bars.classList.remove('fa-bars-1');
+  logoP.classList.remove('logo-p-1')
+
 }
 
 particlesJS.load('particles-js', 'particlesjs.json');
@@ -195,8 +207,44 @@ $(document).ready(function() {
    });
 
 
+   
+   
+
+$(window).resize(function() {
+	let w = $(window).width();
+
+	
+	if(w<1024) {
+		icon.classList.remove('fa-lg')
+		icon1.classList.remove('fa-lg')
+		icon2.classList.remove('fa-lg')
+		icon3.classList.remove('fa-lg')
+		icon4.classList.remove('fa-lg')
+	} else {
+		icon.classList.add('fa-lg')
+		icon1.classList.add('fa-lg')
+		icon2.classList.add('fa-lg')
+		icon3.classList.add('fa-lg')
+		icon4.classList.add('fa-lg')
+	}
+});
+
 $(document).ready(function(){
-      linkScroll = $('.scroll');
+	let w = $(window).width();
+	if(w<1024) {
+		icon.classList.remove('fa-lg')
+		icon1.classList.remove('fa-lg')
+		icon2.classList.remove('fa-lg')
+		icon3.classList.remove('fa-lg')
+		icon4.classList.remove('fa-lg')
+	} else {
+		icon.classList.add('fa-lg')
+		icon1.classList.add('fa-lg')
+		icon2.classList.add('fa-lg')
+		icon3.classList.add('fa-lg')
+		icon4.classList.add('fa-lg')
+	}
+	  linkScroll = $('.scroll');
   
   linkScroll.click(function(e){
       e.preventDefault();
@@ -205,5 +253,7 @@ $(document).ready(function(){
       }, 900);
    });
 });
+
+
 
 
