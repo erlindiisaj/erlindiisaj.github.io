@@ -124,10 +124,10 @@ nav ul li a:hover {
     bottom: 0;
     content: "";
     display: block;
-    height: 1px;
+    height: 1.5px;
     position: relative;
     left: 50%;
-    background: rgb(0, 0, 0);
+    background: rgb(119, 119, 119);
     transition: width 0.3s ease 0s, left 0.3s ease 0s;
     width: 0;
 }
