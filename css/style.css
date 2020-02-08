@@ -467,9 +467,9 @@ nav ul li a:hover {
       text-transform: uppercase;
       text-decoration: none;
       color: #3d3d3d;
-      padding: 20px 0;
       font-size: 18px;
-      letter-spacing: 2px;
+      padding: 20px 0;
+      letter-spacing: 1px;
       overflow: hidden;
       text-align: center;
       height: 70px;
