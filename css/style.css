@@ -925,7 +925,7 @@ nav ul li a:hover {
     width: 100px;
     height: 1px;
     left: 50%;
-    top: 24%;
+    top: 20%;
     background: #3d3d3d;
     transform: translateX(-50%);
 }
@@ -975,7 +975,7 @@ nav ul li a:hover {
     flex-direction: column;
     height: 100%;
     align-items: flex-end;
-    margin-right: 20px;
+    margin: 50px 0 0 20px;
 }
 
 .form form input{
