@@ -52,6 +52,7 @@ const removeClasses = () => {
 }
 
 particlesJS.load('particles-js', 'particlesjs.json');
+particlesJS.load('particles-js-2', 'particlesjs-2.json');
 
 
 

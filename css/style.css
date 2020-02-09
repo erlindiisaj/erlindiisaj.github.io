@@ -235,6 +235,13 @@ nav ul li a:hover {
     left: 0;
 }
 
+#particles-js-2 {
+    position: absolute;
+    z-index: ;
+    width: 100%;
+    height: 100vh;
+}
+
 
 #container {
     height: 30px;
@@ -281,15 +288,18 @@ nav ul li a:hover {
 
 
 .sc2 {
+    background-repeat: no-repeat;
+    background-image: url(/erlindiisaj.github.io/Image/bg.jpg);
     padding-top: 100px;
     height: 150vh;
     width: 100%;
     display: grid;
     grid-template-columns:50px 1fr 1fr 50px;
-    grid-template-rows: 0.65fr 0.35fr;    
+    grid-template-rows: 0.5fr 0.5fr;    
 }
 
 .profile-div {
+    height: fit-content;
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -433,9 +443,12 @@ nav ul li a:hover {
     transform: scaleX(.51);
   }
 
+ 
+
+
+
   .txt-hobbies {
-    
-    margin-bottom: 30px;
+    margin-bottom: 70px;
     font-family: 'Poppins',sans-serif;
     font-size: 20px;
     font-weight: 500;
@@ -453,9 +466,10 @@ nav ul li a:hover {
       grid-row: 2/3;
       display: flex;
       width: 100%;
-      height: 100%;
+      height: auto;
       align-items: center;
       flex-direction: column;
+      margin: 80px 0 0 0;
   }
   .hobbies-btn
   {
@@ -567,6 +581,7 @@ nav ul li a:hover {
 
 .sc3 {
     padding-top: 100px;
+
 }
 
 .background-sc3 {
@@ -594,6 +609,7 @@ nav ul li a:hover {
 }
 
 .funFact h2 {
+
     font-family: 'Poppins', sans-serif;
     color: #ffffff;
     font-size: 40px;
@@ -628,6 +644,7 @@ nav ul li a:hover {
 	position: relative;
     width: 100%;
     display: flex;
+
 }
 .container .box
 {
@@ -688,7 +705,7 @@ nav ul li a:hover {
 .box .content h2
 {
 	position: absolute;
-	top: 20px;
+	top: 10px;
 	right: 20px;
 	margin: 0;
 	padding: 0;
@@ -705,18 +722,17 @@ nav ul li a:hover {
 	margin: 0;
     padding: 0;
     position: absolute;
-    top: -30px;
+    top: -40px;
 	font-size: 24px;
 	font-weight: 500;
 	color: #000000;
 }
 .box .content p
 {
-        
-	margin: 0;
+	margin: 0 0 15px 0;
 	padding: 0;
 	color: #000000;
-	font-size: 16px;
+	font-size: 14px;
 }
 
 
