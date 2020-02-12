@@ -161,9 +161,13 @@
     }
 
 
+  
 
-
-
+    canvas {
+        width: auto;
+        height: auto;
+        
+        }
 
 
 
