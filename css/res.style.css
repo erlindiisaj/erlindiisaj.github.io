@@ -16,6 +16,21 @@
         width: 30px;
     }
 
+    .card-container {
+        display: block; 
+        margin: 15px;
+    }
+
+    .nen-hobbies {
+        display: flex;
+    }
+    .card-hobbies {
+        margin: 0 0 30px 0;
+    }
+
+    .sc2{
+        height: auto;
+    }
 
 
     .box .content h3 {
@@ -95,8 +110,17 @@
         color: black;
     }
 
+
+
+
+
+    .sc2 {
+        height: auto;
+        display: block;
+    }
+
     .hobbies {
-        flex-direction: column;
+        margin: 0;
     }
 
     .nen-hobbies {
@@ -105,7 +129,8 @@
 
     .card-container {
         display: block;
-        ;
+        margin: 0;
+        
     }
 
     .card-hobbies { 
@@ -115,16 +140,16 @@
 
     .txt-hobbies {
         margin: 50px 0;
-        font-size: 15px;
+        font-size: 18px;
     }
 
     .hobbies-btn {
-        width: 100px;
-        height: 35px;
-        font-size: 9px; 
+        width: 150px;
+        height: 50px;
+        font-size: 12px; 
         top: 50%;
         transform: translateY(-50%);
-        padding: 11px 0;
+        padding: 15px 0;
     }
 
 
@@ -143,9 +168,6 @@
 
 
 
-    .sc2 {
-        display: block;
-    }
 
     .profile-div {
         width: auto;
@@ -291,3 +313,19 @@
     }
 }
 
+
+
+@media screen and (max-width:343px)  {
+    .hobbies {
+        padding: 15px 0 0 0;
+    }
+    .hobbies-btn {
+            width: 100px;
+            height: 35px;
+            font-size: 9px; 
+            top: 50%;
+            transform: translateY(-50%);
+            padding: 11px 0;
+
+    }
+}
