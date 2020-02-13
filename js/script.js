@@ -265,6 +265,31 @@ $(document).ready(function(){
 });
 
 
+$(window).on('scroll', function(){
+	if ($(window).scrollTop()){
+		$('.nav-div').addClass('black');
+	}
+	else 
+	{
+		$('.nav-div').removeClass('black');
+	}
+})
+$(document).ready(function(){
+	$(".fa-bars").click(function(){
+		$(".nav-div ul").toggleClass("active")
+		$(".navbar").toggleClass("sticky");
+		$(".scroll").toggleClass("link-sticky");
+		$(".fa-bars").toggleClass('fa-bars-1');
+		$(".logo-div").toggleClass('logo-p-1')
+		
+	})
+})
+
+
+
+
+
+
 
 
 

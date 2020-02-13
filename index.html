@@ -39,7 +39,7 @@
 
     <!-- NavBar -->
     <header>
-        <nav class="navbar" id="navbar">
+        <nav class="navbar responsive-bar" id="navbar">
             <div id='logo-div'class="logo">
                     <p id="logoP" class="opc1">EiSaj.</p>
             </div>
@@ -413,13 +413,14 @@
         </div>
 
         <div class="form" data-aos="fade-left" data-aos-delay="500" data-aos-duration="1000">
-            <form action="">
+            <form action="mail.php" method="POST">
                 <input type="text" name="name" placeholder="Your Name">
-                <input type="email" name="email" placeholder="Your Email" >
+                <input type="text" name="email" placeholder="Your Email" >
 
                 <div class="txt-input">
-                    <input type="text" class='txt-input'name="text" placeholder="We'd love to work with you!">
+                    <input type="text" class='txt-input'name="message" placeholder="We'd love to work with you!">
                 </div>
+                <input type="submit" value="send">
                 <button>SEND MESSAGE</button>
             </form>
             </form>
