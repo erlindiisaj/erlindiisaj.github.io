@@ -30,6 +30,8 @@ canvas {
     vertical-align: bottom;
     }
 
+
+
 /*--------- NavBar ---------*/
 
 .navbar-toggle {
@@ -101,6 +103,8 @@ nav ul li a:hover {
 .logo-p-1 {
     color: black !important;
 }
+
+
 
 
 
@@ -1034,3 +1038,6 @@ footer small {
     font-family: 'Poppins',sans-serif;
     font-size: 14px;
 }
+
+
+

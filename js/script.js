@@ -1,4 +1,5 @@
 window.onscroll = function() {myFunction()};
+
 var navbar = document.getElementById("navbar");
 const link1 = document.getElementById('link1');
 const link2 = document.getElementById('link2');
@@ -12,7 +13,6 @@ const icon2 = document.getElementById('in')
 const icon3 = document.getElementById('git')
 const icon4 = document.getElementById('goo')
 const bars = document.getElementById('fa-bars')
-
 const icon19 = document.getElementById('fb1')
 const icon11 = document.getElementById('tw1')
 const icon21 = document.getElementById('in1')
@@ -21,16 +21,20 @@ const icon41 = document.getElementById('goo1')
 
 
 
+
+
+particlesJS.load('particles-js', 'particlesjs.json');
+particlesJS.load('particles-js-2', 'particlesjs-2.json');
+
 var sticky = navbar.offsetTop;
-// $(document).ready(function() {
-	function myFunction() {
-	  if (window.pageYOffset > sticky) {
+
+function myFunction() {
+	if (window.pageYOffset > sticky) {
 		addClasses();
-	  } else {
+	} else {
 		removeClasses();
-	  }
 	}
-// })
+};
 
 const addClasses = () => {
   navbar.classList.add("sticky");
@@ -44,7 +48,7 @@ const addClasses = () => {
   
   
 
-}
+};
 
 const removeClasses = () => {
   navbar.classList.remove("sticky");
@@ -56,13 +60,13 @@ const removeClasses = () => {
   bars.classList.remove('fa-bars-1');
   logoP.classList.remove('logo-p-1')
 
-}
-
-particlesJS.load('particles-js', 'particlesjs.json');
-particlesJS.load('particles-js-2', 'particlesjs-2.json');
+};
 
 
 
+
+/////////////////////////////////////////////
+//////////   Content Typing   ///////////////
 /////////////////////////////////////////////
 
 	// List of sentences
@@ -137,13 +141,19 @@ particlesJS.load('particles-js-2', 'particlesjs-2.json');
 	// Start the typing effect on load
 	_INTERVAL_VAL = setInterval(Type, 100);
 
-//////////////////////////////////////////////////
+
+	
+/////////////////////////////////////////////
+//////////   Content Typing   ///////////////
+/////////////////////////////////////////////
 
 
 
 
 let isY = false;
 let executed = false;
+
+
 window.addEventListener('scroll', () => {
 	const scrollY = window.scrollY;
 	if (scrollY >= 1050 && scrollY <= 2400) {
@@ -167,7 +177,7 @@ window.addEventListener('scroll', () => {
 			});
 		}
 	}
-})
+});
 
 
 $(document).ready(function() {
@@ -194,11 +204,8 @@ $(document).ready(function() {
 				});
 			}
 		}
-   });
+});
 
-
-   
-   
 
 $(window).resize(function() {
 	let w = $(window).width();
@@ -228,6 +235,7 @@ $(window).resize(function() {
 		icon41.classList.add('fa-2x')
 	}
 });
+
 
 $(document).ready(function(){
 	let w = $(window).width();
@@ -273,17 +281,27 @@ $(window).on('scroll', function(){
 	{
 		$('.nav-div').removeClass('black');
 	}
-})
+});
+
+
 $(document).ready(function(){
 	$(".fa-bars").click(function(){
-		$(".nav-div ul").toggleClass("active")
-		$(".navbar").toggleClass("sticky");
-		$(".scroll").toggleClass("link-sticky");
-		$(".fa-bars").toggleClass('fa-bars-1');
-		$(".logo-div").toggleClass('logo-p-1')
+		if (window.pageYOffset > sticky) {
+			$(".nav-div ul").toggleClass("active");
+			$(".scroll").toggleClass("link-sticky");
+			$(".logo-div").removeClass('opc1');
+			$(".logo-div").toggleClass('logo-p-1');
+			
+		} else {
+			$(".nav-div ul").toggleClass("active");
+			$(".navbar").toggleClass("sticky");
+			$(".scroll").toggleClass("link-sticky");
+			$(".fa-bars").toggleClass('fa-bars-1');
+			$(".logo-div").toggleClass('logo-p-1sss');
+		}
 		
 	})
-})
+});
 
 
 
