@@ -315,12 +315,8 @@ $(document).ready(function(){
 	})
 });
 
-$(function(){ 
-	var navMain = $(".navbar-collapse");
-
-	navMain.on("click", "a", null, function () {
-		navMain.collapse('hide');
-	});
+$(".navigation a").click(function () {
+	$(".nav-div ul").removeClass('active');
 });
 
 
