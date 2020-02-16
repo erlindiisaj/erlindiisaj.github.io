@@ -76,6 +76,7 @@ nav ul li a:hover {
 .fa-bars {
     color: white;
     opacity: 0;
+    cursor: pointer;
 }
 
 .fa-bars-1 {
@@ -93,11 +94,11 @@ nav ul li a:hover {
 .logo p {
     font-family: 'Poppins',sans-serif;
     font-size: 30px;
-    color: rgb(0, 0, 0);
     font-weight: 900;
     margin: 5px;
     position: relative;
     z-index: 100000;
+    color
 }
 
 .logo-p-1 {

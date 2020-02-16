@@ -1,5 +1,5 @@
 window.onscroll = function() {myFunction()};
-
+const links = document.querySelectorAll('.nav-links li')
 var navbar = document.getElementById("navbar");
 const link1 = document.getElementById('link1');
 const link2 = document.getElementById('link2');
@@ -38,6 +38,7 @@ function myFunction() {
 
 const addClasses = () => {
   navbar.classList.add("sticky");
+ 
   link1.classList.add("link-sticky");
   link2.classList.add("link-sticky");
   link3.classList.add("link-sticky");
@@ -283,26 +284,44 @@ $(window).on('scroll', function(){
 	}
 });
 
+// const ul = document.getElementById('ul')
+
+// bars.addEventListener('click', function() {
+// 	console.log(sticky)
+// 	console.log(window.pageYOffset)
+
+// 	if (window.pageYOffset === sticky) {
+// 		navbar.classList.add("sticky");
+// 		ul.classList.add('active');
+// 	} else {
+// 		console.log("works else")
+// 	}
+// })
+
 
 $(document).ready(function(){
 	$(".fa-bars").click(function(){
 		if (window.pageYOffset > sticky) {
 			$(".nav-div ul").toggleClass("active");
 			$(".scroll").toggleClass("link-sticky");
-			$(".logo-div").removeClass('opc1');
-			$(".logo-div").toggleClass('logo-p-1');
 			
 		} else {
 			$(".nav-div ul").toggleClass("active");
 			$(".navbar").toggleClass("sticky");
 			$(".scroll").toggleClass("link-sticky");
 			$(".fa-bars").toggleClass('fa-bars-1');
-			$(".logo-div").toggleClass('logo-p-1sss');
 		}
 		
 	})
 });
 
+$(function(){ 
+	var navMain = $(".navbar-collapse");
+
+	navMain.on("click", "a", null, function () {
+		navMain.collapse('hide');
+	});
+});
 
 
 
