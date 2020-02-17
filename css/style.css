@@ -77,6 +77,7 @@ nav ul li a:hover {
     color: white;
     opacity: 0;
     cursor: pointer;
+    transition: .8s ease-out;
 }
 
 .fa-bars-1 {

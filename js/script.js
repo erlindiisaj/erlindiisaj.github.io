@@ -284,31 +284,15 @@ $(window).on('scroll', function(){
 	}
 });
 
-// const ul = document.getElementById('ul')
-
-// bars.addEventListener('click', function() {
-// 	console.log(sticky)
-// 	console.log(window.pageYOffset)
-
-// 	if (window.pageYOffset === sticky) {
-// 		navbar.classList.add("sticky");
-// 		ul.classList.add('active');
-// 	} else {
-// 		console.log("works else")
-// 	}
-// })
 
 
 $(document).ready(function(){
 	$(".fa-bars").click(function(){
 		if (window.pageYOffset > sticky) {
 			$(".nav-div ul").toggleClass("active");
-			$(".scroll").toggleClass("link-sticky");
 			
 		} else {
 			$(".nav-div ul").toggleClass("active");
-			$(".navbar").toggleClass("sticky");
-			$(".scroll").toggleClass("link-sticky");
 			$(".fa-bars").toggleClass('fa-bars-1');
 		}
 		
