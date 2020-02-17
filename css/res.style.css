@@ -146,8 +146,8 @@
         justify-content: space-around;
         align-items: center;
         background-color: white;
-        clip-path: circle(100px at 90% -20%);
-        -webkit-clip-path: circle(100px at 90% -20%);
+        clip-path: circle(0px at 90% -20%);
+        -webkit-clip-path: circle(0px at 90% -20%);
         
         transition: all 1s ease-out;
         
