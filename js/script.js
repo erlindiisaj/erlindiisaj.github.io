@@ -1,5 +1,5 @@
 const links = document.querySelectorAll('.nav-links li');
-const bars = document.getElementById('fa-bars;');
+const bars = document.getElementById('fa-bars');
 const logo = document.getElementById('logo-div');
 var navbar = document.getElementById("navbar");
 const link1 = document.getElementById('link1');
@@ -49,6 +49,7 @@ const addClasses = () => {
   link4.classList.add("link-sticky");
   logoP.classList.remove('opc1');
   logoP.classList.add('logo-p-1')
+  bars.classList.add('fa-bars-1')
 };
 
 const removeClasses = () => {
@@ -59,6 +60,7 @@ const removeClasses = () => {
   link4.classList.remove("link-sticky");
   logoP.classList.add('opc1');
   logoP.classList.remove('logo-p-1')
+  bars.classList.remove('fa-bars-1')
 
 };
 
