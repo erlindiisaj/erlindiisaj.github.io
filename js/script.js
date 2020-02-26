@@ -22,7 +22,6 @@ const icon41 = document.getElementById('goo1')
 
 
 
-
 particlesJS.load('particles-js', 'particlesjs.json');
 particlesJS.load('particles-js-2', 'particlesjs-2.json');
 
@@ -274,35 +273,59 @@ $(document).ready(function(){
 });
 
 
+
+
 $(window).on('scroll', function(){
-	if ($(window).scrollTop()){
-		$('.nav-div').addClass('black');
+	if ($('.nav-div ul').hasClass("active")) {
+		if ($('.fa-bars').hasClass("fa-bars-1")) {
+			
+		} else {
+			$(".fa-bars").toggleClass('fa-bars-1');
+			$('#logoP').toggleClass('logo-p-1');
+		}
 	}
-	else 
-	{
-		$('.nav-div').removeClass('black');
-	}
+
 });
 
+const active = () => {
+	if (window.pageYOffset > sticky) {
+			$(".nav-div ul").toggleClass("active");
+			
+		} else {
+			$('#logoP').toggleClass('logo-p-1');
+			$(".nav-div ul").toggleClass("active");
+			$(".fa-bars").toggleClass('fa-bars-1');
+		}
+}
+
+const lockScroll = () => {
+	if ($('body').hasClass('lock-scroll')) {
+		$('body').removeClass('lock-scroll');
+	}
+	else {
+		$('body').addClass('lock-scroll');
+
+	}
+}
 
 
 $(document).ready(function(){
 	$(".fa-bars").click(function(){
-		if (window.pageYOffset > sticky) {
-			$(".nav-div ul").toggleClass("active");
-			
-		} else {
-			$(".nav-div ul").toggleClass("active");
-			$(".fa-bars").toggleClass('fa-bars-1');
-		}
+		active();
+		lockScroll();
 		
 	})
 });
 
 $(".navigation a").click(function () {
 	$(".nav-div ul").removeClass('active');
+	lockScroll();
 });
 
+$('#ul').click(function () {
+	$(".nav-div ul").removeClass('active');
+	lockScroll();
+});
 
 
 

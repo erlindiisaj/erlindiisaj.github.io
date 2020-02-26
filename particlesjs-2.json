@@ -55,7 +55,7 @@
     "move": {
       "enable": true,
       "speed": 3,
-      "direction": "none",
+      "direction": "top",
       "random": true,
       "straight": false,
       "out_mode": "out",
@@ -68,7 +68,7 @@
     }
   },
   "interactivity": {
-    "detect_on": "canvas",
+    "detect_on": "window",
     "events": {
       "onhover": {
         "enable": true,

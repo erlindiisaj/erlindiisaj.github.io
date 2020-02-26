@@ -13,7 +13,7 @@ html, body {
 }
 
 header {
-    background-image: url(/erlindiisaj.github.io/Image/Background@2x.jpg);
+    background-image: url(/Image/Background@2x.jpg);
     background-size: cover;
     height: 100vh;
     background-position: center;
@@ -31,6 +31,9 @@ canvas {
     }
 
 
+.lock-scroll {
+    display: ;
+}
 
 /*--------- NavBar ---------*/
 
@@ -99,7 +102,7 @@ nav ul li a:hover {
     margin: 5px;
     position: relative;
     z-index: 100000;
-    color
+    transition: all .5s ease-out;
 }
 
 .logo-p-1 {
@@ -302,7 +305,7 @@ nav ul li a:hover {
 
 .sc2 {
     background-repeat: no-repeat;
-    background-image: url(/erlindiisaj.github.io/Image/bg.jpg);
+    background-image: url(/Image/bg.jpg);
     padding-top: 100px;
     height: 150vh;
     width: 100%;
@@ -603,7 +606,7 @@ nav ul li a:hover {
     justify-content: space-around;
     align-items: center;
     position: relative;
-    background-image: url(/erlindiisaj.github.io/Image/sc3.jpg);
+    background-image: url(/Image/sc3.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -896,7 +899,7 @@ nav ul li a:hover {
     height: 100vh;
     width: 100%;
     position: relative;
-    background-image: url(/erlindiisaj.github.io/Image/img-2.jpg);
+    background-image: url(/Image/img-2.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;

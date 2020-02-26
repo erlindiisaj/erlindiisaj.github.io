@@ -121,10 +121,11 @@
     .active {
         display: flex;
         background-size: cover;
-        background-image: url(/erlindiisaj.github.io/Image/bg.jpg);
+        background-image: url(/Image/bg.jpg);
         clip-path: circle(1000px at 90% -10%);
         -webkit-clip-path: circle(1000px at 90% -10%);
         transition: all 1s ease-out;
+        z-index: 1;
     }
     
     .nav-div {
@@ -136,22 +137,19 @@
    
 
     nav ul {
+        overflow-y: hidden;
         position: fixed;
         height: 100vh;
         width: 100%;
-        
         margin:  0;
-        padding: 30px 0 20px 0;
-
         flex-direction: column;
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
         align-items: center;
         background-color: white;
         clip-path: circle(0px at 80% 10%);
         -webkit-clip-path: circle(0px at 82% 9%);
-        
-        transition: all .5s ease-out;
+        transition: all .5s ease-in;
         
     }
 
@@ -172,7 +170,11 @@
 
 
 
+    .fixedPosition
+    {
 
+       
+    }
 
 
 
@@ -259,12 +261,7 @@
 
   
 
-    canvas {
-        width: auto;
-        height: auto;
-        
-        }
-
+   
 
 
 
