@@ -67,7 +67,10 @@
 
 
 
-
+    .about-info-div {
+        width: auto;
+        padding: 20px;
+    }
     
 
 
@@ -276,10 +279,6 @@
         width: auto;
     }
 
-    .about-info-div {
-        width: auto;
-        padding: 20px;
-    }
 
     .aboutme-info {
         width: auto;

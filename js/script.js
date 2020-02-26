@@ -48,7 +48,6 @@ const addClasses = () => {
   link3.classList.add("link-sticky");
   link4.classList.add("link-sticky");
   logoP.classList.remove('opc1');
-  bars.classList.add('fa-bars-1');
   logoP.classList.add('logo-p-1')
 };
 
@@ -59,7 +58,6 @@ const removeClasses = () => {
   link3.classList.remove("link-sticky");
   link4.classList.remove("link-sticky");
   logoP.classList.add('opc1');
-  bars.classList.remove('fa-bars-1');
   logoP.classList.remove('logo-p-1')
 
 };
@@ -160,7 +158,6 @@ $(window).resize(function() {
 });
 
 
-
 $(window).on('scroll', function(){
 	counting();
 	myFunction();
@@ -179,12 +176,19 @@ $(window).on('scroll', function(){
 $(document).ready(function(){
 	resIcon();
 	counting();
+	myFunction();
 	$(".fa-bars").click(function(){
 		active();
 		lockScroll();
 	})
 });
 
+$(window).on("load",function(){
+	$(".preloader").fadeOut(1000, function() {
+		$('body').removeClass('loading');
+	});
+
+});
 
 
 
