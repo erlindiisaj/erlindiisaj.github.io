@@ -53,15 +53,14 @@ const addClasses = () => {
 };
 
 const removeClasses = () => {
-  navbar.classList.remove("sticky");
-  link1.classList.remove("link-sticky");
-  link2.classList.remove("link-sticky");
-  link3.classList.remove("link-sticky");
-  link4.classList.remove("link-sticky");
-  logoP.classList.add('opc1');
-  logoP.classList.remove('logo-p-1')
-  bars.classList.remove('fa-bars-1')
-
+	navbar.classList.remove("sticky");
+	link1.classList.remove("link-sticky");
+	link2.classList.remove("link-sticky");
+	link3.classList.remove("link-sticky");
+	link4.classList.remove("link-sticky");
+	logoP.classList.remove('logo-p-1')
+	bars.classList.remove('fa-bars-1')
+	logoP.classList.add('opc1');
 };
 
 const counting = () => {
@@ -114,14 +113,6 @@ const resIcon = () => {
 		icon31.classList.add('fa-2x')
 		icon41.classList.add('fa-2x')
 	}
-	  linkScroll = $('.scroll');
-  
-  linkScroll.click(function(e){
-      e.preventDefault();
-      $('body, html').animate({
-         scrollTop: $(this.hash).offset().top
-      }, 900);
-   });
 };
 
 const active = () => {
@@ -129,21 +120,27 @@ const active = () => {
 			$(".nav-div ul").toggleClass("active");
 			
 		} else {
-			$('#logoP').toggleClass('logo-p-1');
 			$(".nav-div ul").toggleClass("active");
+			$('#logoP').toggleClass('logo-p-1');
 			$(".fa-bars").toggleClass('fa-bars-1');
 		}
 };
 
 const lockScroll = () => {
-	if ($('body').hasClass('lock-scroll')) {
+	if ($('body').hasClass('lock-scroll') && $('html').hasClass('lock-scroll')) {
 		$('body').removeClass('lock-scroll');
+		$('html').removeClass('lock-scroll');
+
 	}
 	else {
 		$('body').addClass('lock-scroll');
+		$('html').addClass('lock-scroll');
 
 	}
 };
+
+
+	
 
 
 
@@ -179,6 +176,13 @@ $(document).ready(function(){
 	resIcon();
 	counting();
 	myFunction();
+	linkScroll = $('.scroll');
+	linkScroll.click(function(e){
+		e.preventDefault();
+		$('body, html').animate({
+		   scrollTop: $(this.hash).offset().top
+		}, 900);
+	 });
 	$(".fa-bars").click(function(){
 		active();
 		lockScroll();
@@ -187,6 +191,7 @@ $(document).ready(function(){
 
 $(window).on("load",function(){
 	$(".preloader").fadeOut(1000, function() {
+		$('html').removeClass('loading');
 		$('body').removeClass('loading');
 	});
 
@@ -195,8 +200,13 @@ $(window).on("load",function(){
 
 
 $(".navigation a").click(function () {
-	$(".nav-div ul").removeClass('active');
-	lockScroll();
+	if(window.pageYOffset > sticky) {
+		$(".nav-div ul").removeClass('active');
+	} else {
+		$(".nav-div ul").removeClass('active');
+		$('#logoP').removeClass('logo-p-1');
+		$(".fa-bars").removeClass('fa-bars-1');
+	}
 });
 
 $('#ul').click(function () {

@@ -16,6 +16,7 @@
     height: 100vh;
     overflow: hidden;
 }
+
 .sk-folding-cube {
 
     margin: 20px auto;
@@ -117,7 +118,10 @@ img { max-width: 100%; }
 html, body {
     overflow-x: hidden;
     max-width: 100%;
+    font-family: 'Poppins',sans-serif;
 }
+
+
 
 header {
     background-image: url(/Image/Background@2x.jpg);
@@ -126,9 +130,7 @@ header {
     background-position: center;
     }
 
-body {
-    font-family: 'Poppins',sans-serif;
-}
+
 
 canvas {
     width: 100%;
@@ -643,8 +645,8 @@ nav ul li a:hover {
   }
   .hobbies-btn span:nth-child(1)
   {
-    bottom: 0;
-    right: 50%;
+      top: 0;
+      left: 50%;
   }
   .hobbies-btn span:nth-child(3)
   {
@@ -654,8 +656,8 @@ nav ul li a:hover {
   .hobbies-btn:hover .hobbies-span:nth-child(1)
   {
     background: rgb(0, 0, 0);
-      bottom: 0;
-      right: -50%;
+      top: 0;
+      left: -50%;
   }
   .hobbies-btn:hover .hobbies-span:nth-child(3)
   {
@@ -695,7 +697,6 @@ nav ul li a:hover {
       bottom: -50%;
       right: 0;
   }
-
 
 /*//////////////////////////////////////////////*/
 
