@@ -190,8 +190,8 @@ $(document).ready(function(){
 		}, 1500);
 	 });
 	$(".fa-bars").click(function(){
-		active();
-		lockScroll();
+			active();
+			lockScroll();		
 	})
 });
 
@@ -207,8 +207,13 @@ $(window).on("load",function(){
 
 
 $('#ul').click(function () {
-	scrRm();
-	lockScroll();
+	let w = $(window).width();
+		if(w < 768) { 
+			scrRm();
+			lockScroll();
+		}
+
+	
 });
 
 
