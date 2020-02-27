@@ -145,16 +145,6 @@ canvas {
 }
 
 
-i {
-    -webkit-tap-highlight-color: transparent;
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
-
 /*--------- NavBar ---------*/
 
 .navbar-toggle {
@@ -411,6 +401,22 @@ nav ul li a:hover {
 }
 
 
+*::selection 
+{
+    background-color:transparent;
+} 
+*::-moz-selection
+{
+    background-color:transparent;
+}
+*
+{        
+    -webkit-user-select: none;
+    -moz-user-select: -moz-none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
 
 
 
@@ -1165,4 +1171,11 @@ footer small {
     font-size: 14px;
 }
 
+.social-a {
+    color: rgb(190, 190, 190);
+    text-decoration: none;
+}
 
+.social-a:hover {
+    color: rgb(255, 255, 255);
+}
