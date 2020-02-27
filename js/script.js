@@ -142,7 +142,9 @@ const lockScroll = () => {
 const scrRm = () => {
 	if(window.pageYOffset > sticky) {
 		$(".nav-div ul").removeClass('active');
+		console.log("sticky")
 	} else {
+		console.log("top")
 		$(".nav-div ul").removeClass('active');
 		$('#logoP').removeClass('logo-p-1');
 		$(".fa-bars").removeClass('fa-bars-1');
@@ -205,9 +207,6 @@ $(window).on("load",function(){
 
 
 
-$(".navigation a").click(function () {
-	scrRm();
-});
 
 $('#ul').click(function () {
 	scrRm();
