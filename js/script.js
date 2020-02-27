@@ -139,7 +139,15 @@ const lockScroll = () => {
 	}
 };
 
-
+const scrRm = () => {
+	if(window.pageYOffset > sticky) {
+		$(".nav-div ul").removeClass('active');
+	} else {
+		$(".nav-div ul").removeClass('active');
+		$('#logoP').removeClass('logo-p-1');
+		$(".fa-bars").removeClass('fa-bars-1');
+	}
+};
 	
 
 
@@ -156,7 +164,6 @@ $(window).resize(function() {
 	resIcon();
 });
 
-
 $(window).on('scroll', function(){
 	counting();
 	myFunction();
@@ -171,7 +178,6 @@ $(window).on('scroll', function(){
 
 });
 
-
 $(document).ready(function(){
 	resIcon();
 	counting();
@@ -181,7 +187,7 @@ $(document).ready(function(){
 		e.preventDefault();
 		$('body, html').animate({
 		   scrollTop: $(this.hash).offset().top
-		}, 900);
+		}, 1500);
 	 });
 	$(".fa-bars").click(function(){
 		active();
@@ -200,17 +206,11 @@ $(window).on("load",function(){
 
 
 $(".navigation a").click(function () {
-	if(window.pageYOffset > sticky) {
-		$(".nav-div ul").removeClass('active');
-	} else {
-		$(".nav-div ul").removeClass('active');
-		$('#logoP').removeClass('logo-p-1');
-		$(".fa-bars").removeClass('fa-bars-1');
-	}
+	scrRm();
 });
 
 $('#ul').click(function () {
-	$(".nav-div ul").removeClass('active');
+	scrRm();
 	lockScroll();
 });
 
