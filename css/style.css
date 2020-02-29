@@ -1179,3 +1179,13 @@ footer small {
 .social-a:hover {
     color: rgb(255, 255, 255);
 }
+
+.social-a1 {
+    color: rgb(77, 77, 77);
+    text-decoration: none;
+    transition: all .5s ease;
+}
+
+.social-a1:hover {
+    color: rgb(0, 0, 0);
+}
