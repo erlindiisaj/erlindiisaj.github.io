@@ -32,7 +32,6 @@
         height: auto;
     }
 
-
     .box .content h3 {
         font-size: 18px;
         top: -30px;
@@ -51,7 +50,6 @@
         width: auto;
     }
 
-
     .progress-main-div {
         display: block;
     }
@@ -64,58 +62,19 @@
         width: auto;
     }
 
-
-
-
     .about-info-div {
         width: auto;
         padding: 20px;
     }
-    
-
-
-
-
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
 
 
 @media screen and (max-width:768px) {
 
-
-   
-
-
-
-
-
-
-
-
     .fa-bars {
         opacity: 1;
         
     }
-
-    
 
     .nav-div ul li a {
         color: black;
@@ -166,34 +125,6 @@
         color: black;
     }
 
-
-
-
-
-
-
-
-    .fixedPosition
-    {
-
-       
-    }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     .greeting-div p {
         font-size: 20px;
     }
@@ -210,10 +141,6 @@
     #text {
         font-size: 10px;
     }
-
-
-
-
 
     .sc2 {
         height: auto;
@@ -261,14 +188,6 @@
        
     }
 
-
-  
-
-   
-
-
-
-
     .profile-div {
         width: auto;
     }
@@ -291,15 +210,6 @@
         padding: 0 0 20px 0;
 
     }
-
-
-
-
-
-
-
-
-
 
     .background-sc3 {
         height: auto;
@@ -332,10 +242,6 @@
     .container-skills1 {
         width: auto;
     }
-
-
-
-
 
     .sc4 {
         height: auto;
@@ -408,9 +314,7 @@
         font-size: 10px;
     }
 }
-
-
-
+ 
 @media screen and (max-width:343px)  {
     .hobbies {
         padding: 15px 0 0 0;
@@ -423,8 +327,5 @@
             transform: translateY(-50%);
             padding: 11px 0;
 
-    }
-
-     
-      
+    }   
 }
