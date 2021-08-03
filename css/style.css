@@ -115,17 +115,25 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    /* -webkit-touch-callout: none !important;
+}
+
+
+#home, #about, #skills, #navbar{
+    -webkit-touch-callout: none !important;
     -webkit-user-select: none !important;
     -webkit-tap-highlight-color: transparent !important;
     -moz-user-select: none !important;
-
+    
     -webkit-user-select: none;
     -khtml-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
-    user-select: none; */
+    user-select: none;
 }
+
+
+
+
 
 img { max-width: 100%; }
 

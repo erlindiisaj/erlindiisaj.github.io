@@ -96,3 +96,4 @@ function Delete() {
         }, 200))
 }
 _INTERVAL_VAL = setInterval(Type, 100);
+
