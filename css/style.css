@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Hi+Melody&family=Poppins:wght@300;400;500;600;700;800&display=swap');
 .preloader {
   background-color: white;
   position: absolute;
@@ -883,24 +882,6 @@ nav ul li a:hover {
   background: #a7a7a7;
   margin: 15px 0 10px;
 }
-.progress {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 90%;
-  height: 100%;
-  background: linear-gradient(to right, #7c7c7c, #000000);
-}
-.progress:before {
-  position: absolute;
-  top: -5px;
-  right: 0;
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  background: rgb(252, 252, 252);
-  box-shadow: 0 0 5px rgb(0, 0, 0);
-}
 
 .container-skills1 {
   position: relative;
@@ -952,16 +933,134 @@ nav ul li a:hover {
 
 /*     SECTOR 4      */
 
+.sc5 {
+  padding-top: 100px;
+}
+
 .portfolio-div {
-  height: 800px;
+  display: grid;
+  grid-template-rows: 200px auto;
+}
+
+.port-gallery {
+  grid-row: 2/3;
+  justify-content: center;
+  align-items: center;
+}
+
+.item {
+  display: inline-block;
+  background: rgb(0, 0, 0);
+  height: 400px;
+  width: 550px;
+  margin: 50px 25px;
+  border-radius: 20px;
+  transform-origin: center;
+  transform: perspective(800px) rotateY(25deg);
+  transition: 0.5s;
+}
+
+.item::after {
+  position: absolute;
+  top: 0;
+  display: block;
+  content: '';
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.8) 40%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+
+.port-gallery:hover a {
+  opacity: 0.3;
+}
+
+.port-gallery a:hover p {
+  bottom: 80px;
+}
+
+.port-gallery a:hover {
+  transform: perspective(800px) rotateY(0deg);
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  opacity: 1;
+}
+
+.item1 {
+  background-image: url(/Image/project1.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.item2 {
+  background-image: url(/Image/test2.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.item3 {
+  background-image: url(/Image/test3.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.item4 {
+  background-image: url(/Image/test4.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.port-text {
+  margin-bottom: 50px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  grid-row: 1/2;
+}
+
+.port-header p {
+  font-size: 30px;
+  font-weight: 600;
+}
+.port-quote {
+  margin-top: 10px;
+}
+.quote-p {
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.list-x {
+  padding-bottom: 150px;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  transition: all 0.2s;
+  /* transform: scale(0.98); */
+  will-change: transform;
+  user-select: none;
+  cursor: pointer;
+  -webkit-overflow-scrolling: touch;
+}
+
+.project-name {
+  font-size: 30px;
+  position: absolute;
+  display: inline-block;
+  color: white;
+  z-index: 1;
+  bottom: 50px;
+  left: 50%;
+  transition: all 0.2s;
+  transform: translate(-50%, -50%);
 }
 
 /*//////////////////////////////////////////////*/
 
-/*     SECTOR 5      */
-
 .sc4 {
-  margin-top: 150px;
   padding: 80px;
   height: 100vh;
   width: 100%;
