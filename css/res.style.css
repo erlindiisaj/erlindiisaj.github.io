@@ -1,331 +1,316 @@
-@media screen and (max-width:1024px) {
-    .sc1 {
-        grid-template-columns: 10% 1fr 1fr 10%;
-    }
+@media screen and (max-width: 1024px) {
+  .sc1 {
+    grid-template-columns: 10% 1fr 1fr 10%;
+  }
 
-    .greeting-div p {
-        font-size: 28px;
-    }
+  .greeting-div p {
+    font-size: 28px;
+  }
 
-    #text {
-        font-size: 18px;
-    }
+  #text {
+    font-size: 18px;
+  }
 
-    .social span {
-        height: 30px;
-        width: 30px;
-    }
+  .social span {
+    height: 30px;
+    width: 30px;
+  }
 
-    .card-container {
-        display: block; 
-        margin: 15px;
-    }
+  .card-container {
+    display: block;
+    margin: 15px;
+  }
 
-    .nen-hobbies {
-        display: flex;
-    }
-    .card-hobbies {
-        margin: 0 0 30px 0;
-    }
+  .nen-hobbies {
+    display: flex;
+  }
+  .card-hobbies {
+    margin: 0 0 30px 0;
+  }
 
-    .sc2{
-        height: auto;
-    }
+  .sc2 {
+    height: auto;
+  }
 
-    .box .content h3 {
-        font-size: 18px;
-        top: -30px;
-    }
+  .box .content h3 {
+    font-size: 18px;
+    top: -30px;
+  }
 
-    .container {
-        display: block;
-    }
+  .container {
+    display: block;
+  }
 
-    .container .box {
-        margin: 40px;
-    }
+  .container .box {
+    margin: 40px;
+  }
 
-    #particles-js-2 {
-        height: auto;
-        width: auto;
-    }
+  #particles-js-2 {
+    height: auto;
+    width: auto;
+  }
 
-    .progress-main-div {
-        display: block;
-    }
+  .progress-main-div {
+    display: block;
+  }
 
-    .container-skills {
-        width: auto;
-    }
+  .container-skills {
+    width: auto;
+  }
 
-    .container-skills1 {
-        width: auto;
-    }
+  .container-skills1 {
+    width: auto;
+  }
 
-    .about-info-div {
-        width: auto;
-        padding: 20px;
-    }
+  .about-info-div {
+    width: auto;
+    padding: 20px;
+  }
 }
 
+@media screen and (max-width: 768px) {
+  .fa-bars {
+    opacity: 1;
+  }
 
-@media screen and (max-width:768px) {
+  .nav-div ul li a {
+    color: black;
+  }
 
-    .fa-bars {
-        opacity: 1;
-        
-    }
+  .active {
+    display: flex;
+    background-size: cover;
+    background-image: url(/Image/bg.jpg);
+    clip-path: circle(1000px at 90% -10%);
+    -webkit-clip-path: circle(1000px at 90% -10%);
+    transition: all 1s ease-out;
+    z-index: 1;
+  }
 
-    .nav-div ul li a {
-        color: black;
-    }
+  .nav-div {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
 
-    .active {
-        display: flex;
-        background-size: cover;
-        background-image: url(/Image/bg.jpg);
-        clip-path: circle(1000px at 90% -10%);
-        -webkit-clip-path: circle(1000px at 90% -10%);
-        transition: all 1s ease-out;
-        z-index: 1;
-    }
-    
-    .nav-div {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        z-index: -1;
-    }
-   
+  nav ul {
+    overflow-y: hidden;
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    clip-path: circle(0px at 80% 10%);
+    -webkit-clip-path: circle(0px at 82% 9%);
+    transition: all 0.5s ease-in;
+  }
 
-    nav ul {
-        overflow-y: hidden;
-        position: fixed;
-        height: 100vh;
-        width: 100%;
-        margin:  0;
-        flex-direction: column;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: white;
-        clip-path: circle(0px at 80% 10%);
-        -webkit-clip-path: circle(0px at 82% 9%);
-        transition: all .5s ease-in;
-        
-    }
+  .logo p {
+    color: white;
+    opacity: 1;
+  }
 
+  .logo-p-1 {
+    color: black;
+  }
 
-    .logo p {
-        color: white;
-        opacity: 1;
-    }
+  .greeting-div p {
+    font-size: 20px;
+  }
 
-    .logo-p-1 {
-        color: black;
-    }
+  .sc1 {
+    grid-template-columns: 10% 1fr 10%;
+  }
 
-    .greeting-div p {
-        font-size: 20px;
-    }
+  .sc1-main-div {
+    grid-column: 2/3;
+    align-items: center;
+  }
 
-    .sc1 {
-        grid-template-columns: 10% 1fr 10%;
-    }
+  #text {
+    font-size: 10px;
+  }
 
-    .sc1-main-div {
-        grid-column: 2/3;
-        align-items: center;
-    }
+  .sc2 {
+    height: auto;
+    display: block;
+  }
 
-    #text {
-        font-size: 10px;
-    }
+  .hobbies {
+    margin: 0;
+  }
 
-    .sc2 {
-        height: auto;
-        display: block;
-    }
+  .nen-hobbies {
+    display: flex;
+  }
 
-    .hobbies {
-        margin: 0;
-    }
+  .card-container {
+    display: block;
+    margin: 0;
+  }
 
-    .nen-hobbies {
-        display: flex;
-    }
+  .card-hobbies {
+    margin: 15px;
+  }
 
-    .card-container {
-        display: block;
-        margin: 0;
-        
-    }
+  .txt-hobbies {
+    margin: 50px 0;
+    font-size: 18px;
+  }
 
-    .card-hobbies { 
-        margin: 15px ;
+  .hobbies-btn {
+    width: 150px;
+    height: 50px;
+    font-size: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 15px 0;
+  }
 
-    }
+  .aboutme-info {
+    text-align: justify;
+    text-justify: inter-word;
+    font-size: 14px;
+  }
 
-    .txt-hobbies {
-        margin: 50px 0;
-        font-size: 18px;
-    }
+  .profile-div {
+    width: auto;
+  }
 
-    .hobbies-btn {
-        width: 150px;
-        height: 50px;
-        font-size: 12px; 
-        top: 50%;
-        transform: translateY(-50%);
-        padding: 15px 0;
-    }
+  .profile-div img {
+    padding: 20px;
+    height: auto;
+    width: auto;
+  }
 
+  .aboutme-info {
+    width: auto;
+    padding: 20px 0;
+    margin: 0;
+  }
 
-    .aboutme-info {
-        text-align: justify;
-        text-justify: inter-word;
-        font-size: 14px;
-       
-    }
+  .personal-info {
+    width: auto;
+    padding: 0 0 20px 0;
+  }
 
-    .profile-div {
-        width: auto;
-    }
+  .background-sc3 {
+    height: auto;
+    width: auto;
+    display: block;
+  }
 
-    .profile-div img {
-        padding:20px;
-        height: auto;
-        width: auto;
-    }
+  .container {
+    display: block;
+  }
 
+  .container .box {
+    margin: 40px;
+  }
 
-    .aboutme-info {
-        width: auto;
-        padding: 20px 0;
-        margin: 0;
-    }
+  #particles-js-2 {
+    height: auto;
+    width: auto;
+  }
 
-    .personal-info {
-        width: auto;
-        padding: 0 0 20px 0;
+  .progress-main-div {
+    display: block;
+  }
 
-    }
+  .container-skills {
+    width: auto;
+  }
 
-    .background-sc3 {
-        height: auto;
-        width: auto;
-        display: block;
-    }
+  .container-skills1 {
+    width: auto;
+  }
 
-    .container {
-        display: block;
-    }
+  .sc4 {
+    height: auto;
+    width: auto;
+    display: block;
+    z-index: 0;
+  }
 
-    .container .box {
-        margin: 40px;
-    }
+  .sc4::before {
+    z-index: -1;
+  }
 
-    #particles-js-2 {
-        height: auto;
-        width: auto;
-    }
+  .send-msg {
+    width: auto;
+    margin: 0 0 40px 0;
+  }
+  .send-msg p {
+    font-size: 20px;
+  }
 
+  .contact-info {
+    width: auto;
+    margin: 0;
+  }
 
-    .progress-main-div {
-        display: block;
-    }
+  .contact-info h2 {
+    font-size: 16px;
+  }
 
-    .container-skills {
-        width: auto;
-    }
+  .contact-info-txt p {
+    font-size: 14px;
+  }
 
-    .container-skills1 {
-        width: auto;
-    }
+  .contact-social {
+    margin: 20px 0 0 0;
+    display: flex;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+  }
 
-    .sc4 {
-        height: auto;
-        width: auto;
-        display: block;
-        z-index: 0;
-    }
+  .form {
+    width: auto;
+    margin: 50px 0 0 0;
+  }
 
-    .sc4::before {
-        z-index: -1;
-    }
+  .form form {
+    width: auto;
+    margin: 0;
+  }
 
-    .send-msg {
-        width: auto;
-        margin: 0 0 40px 0;
-    }
-    .send-msg p {
-        font-size: 20px;
-    }
+  .form form input {
+    width: 100%;
+    height: auto;
+    font-size: 14px;
+  }
 
-    .contact-info {
-        width: auto;
-        margin: 0;
-    }
+  .txt-input {
+    width: 100%;
+  }
 
-    .contact-info h2 {
-        font-size: 16px;
-    }
+  .form form button {
+    width: 100px;
+    height: 35px;
+    font-size: 10px;
+  }
 
-    .contact-info-txt p {
-        font-size: 14px;
-    }
-
-    .contact-social {
-        margin: 20px 0 0 0;
-        display: flex;
-        width: auto;
-        justify-content: center;
-        align-items: center;
-
-    }
-
-    .form {
-        width: auto;
-        margin: 50px 0 0 0;
-    }
-
-    .form form {
-        width: auto;
-        margin: 0;
-    }
-
-    .form form input {
-        width: 100%;
-        height: auto;
-        font-size: 14px;
-    }
-
-    .txt-input {
-        width: 100%;
-    }
-   
-    .form form button {
-        width: 100px;
-        height: 35px;
-        font-size: 10px;
-    }
-
-    footer small {
-        font-size: 10px;
-    }
+  footer small {
+    font-size: 10px;
+  }
 }
- 
-@media screen and (max-width:343px)  {
-    .hobbies {
-        padding: 15px 0 0 0;
-    }
-    .hobbies-btn {
-            width: 100px;
-            height: 35px;
-            font-size: 9px; 
-            top: 50%;
-            transform: translateY(-50%);
-            padding: 11px 0;
 
-    }   
+@media screen and (max-width: 343px) {
+  .hobbies {
+    padding: 15px 0 0 0;
+  }
+  .hobbies-btn {
+    width: 100px;
+    height: 35px;
+    font-size: 9px;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 11px 0;
+  }
 }
