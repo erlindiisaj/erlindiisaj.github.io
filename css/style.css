@@ -946,6 +946,16 @@ nav ul li a:hover {
   grid-row: 2/3;
   justify-content: center;
   align-items: center;
+  padding-bottom: 150px;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  transition: all 0.2s;
+  /* transform: scale(0.98); */
+  will-change: transform;
+  user-select: none;
+  cursor: pointer;
+  -webkit-overflow-scrolling: touch;
 }
 
 .item {
@@ -1031,19 +1041,6 @@ nav ul li a:hover {
 .quote-p {
   font-weight: 300;
   font-size: 14px;
-}
-
-.list-x {
-  padding-bottom: 150px;
-  width: 100%;
-  overflow: hidden;
-  white-space: nowrap;
-  transition: all 0.2s;
-  /* transform: scale(0.98); */
-  will-change: transform;
-  user-select: none;
-  cursor: pointer;
-  -webkit-overflow-scrolling: touch;
 }
 
 .project-name {

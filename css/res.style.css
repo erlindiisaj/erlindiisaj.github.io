@@ -66,6 +66,21 @@
     width: auto;
     padding: 20px;
   }
+  .port-gallery {
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+  }
+  .item {
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    width: 90%;
+    transform: none;
+    margin: 20px;
+  }
+
+  .item::after {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -298,6 +313,14 @@
 
   footer small {
     font-size: 10px;
+  }
+
+  .quote-p {
+    font-size: 12px;
+  }
+
+  .port-header p {
+    font-size: 20px;
   }
 }
 

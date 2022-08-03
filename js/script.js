@@ -188,7 +188,7 @@ function Delete() {
 }
 _INTERVAL_VAL = setInterval(Type, 100);
 
-const slider = document.querySelector('.list-x');
+const slider = document.querySelector('.port-gallery');
 
 let isDown = false;
 let startX;
