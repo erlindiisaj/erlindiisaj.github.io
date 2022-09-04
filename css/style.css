@@ -942,87 +942,7 @@ nav ul li a:hover {
   grid-template-rows: 200px auto;
 }
 
-.port-gallery {
-  grid-row: 2/3;
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 150px;
-  width: 100%;
-  overflow: hidden;
-  white-space: nowrap;
-  transition: all 0.2s;
-  /* transform: scale(0.98); */
-  will-change: transform;
-  user-select: none;
-  cursor: pointer;
-  -webkit-overflow-scrolling: touch;
-}
-
-.item {
-  display: inline-block;
-  background: rgb(0, 0, 0);
-  height: 400px;
-  width: 550px;
-  margin: 50px 25px;
-  border-radius: 20px;
-  transform-origin: center;
-  transform: perspective(800px) rotateY(25deg);
-  transition: 0.5s;
-}
-
-.item::after {
-  position: absolute;
-  top: 0;
-  display: block;
-  content: '';
-  width: 100%;
-  height: 100%;
-  border-radius: 20px;
-  background: linear-gradient(
-    0deg,
-    rgba(0, 0, 0, 0.8) 40%,
-    rgba(255, 255, 255, 0) 100%
-  );
-}
-
-.port-gallery:hover a {
-  opacity: 0.3;
-}
-
-.port-gallery a:hover p {
-  bottom: 80px;
-}
-
-.port-gallery a:hover {
-  transform: perspective(800px) rotateY(0deg);
-  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-  opacity: 1;
-}
-
-.item1 {
-  background-image: url(/Image/project1.jpg);
-  background-size: cover;
-  background-position: center;
-}
-
-.item2 {
-  background-image: url(/Image/test2.jpg);
-  background-size: cover;
-  background-position: center;
-}
-.item3 {
-  background-image: url(/Image/test3.jpg);
-  background-size: cover;
-  background-position: center;
-}
-.item4 {
-  background-image: url(/Image/test4.jpg);
-  background-size: cover;
-  background-position: center;
-}
-
 .port-text {
-  margin-bottom: 50px;
   height: auto;
   display: flex;
   flex-direction: column;
@@ -1053,6 +973,163 @@ nav ul li a:hover {
   left: 50%;
   transition: all 0.2s;
   transform: translate(-50%, -50%);
+}
+
+.gallery {
+  margin: 100px 150px;
+  height: auto;
+  width: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.first-column {
+  grid-column: 1/2;
+}
+.second-column {
+  grid-column: 2/3;
+}
+.container-1 {
+  height: 600px;
+  margin: 20px 10px;
+}
+
+.container-2 {
+  height: 400px;
+  margin: 20px 10px;
+}
+
+.container-4 {
+  height: 400px;
+  margin: 20px 10px;
+}
+
+.container-3 {
+  height: 600px;
+  margin: 20px 10px;
+}
+
+.card--1 .card__img,
+.card--1 .card__img--hover {
+  background-image: url('/Image/project-1.jpg');
+}
+
+.card--2 .card__img,
+.card--2 .card__img--hover {
+  background-image: url('/Image/project-2.jpg');
+}
+
+.card--3 .card__img,
+.card--3 .card__img--hover {
+  background-image: url('/Image/project-3.jpg');
+}
+
+.card--4 .card__img,
+.card--4 .card__img--hover {
+  background-image: url('/Image/project-4.jpg');
+}
+
+.card__like {
+  width: 18px;
+}
+
+.card__clock {
+  width: 15px;
+  vertical-align: middle;
+  fill: #ad7d52;
+}
+.card__time {
+  font-size: 12px;
+  color: #ad7d52;
+  vertical-align: middle;
+  margin-left: 5px;
+}
+
+.card__clock-info {
+  float: right;
+}
+
+.card__img {
+  visibility: hidden;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.card__info-hover {
+  position: absolute;
+  padding: 16px;
+  width: 100%;
+  opacity: 0;
+  top: 0;
+}
+
+.card__img--hover {
+  transition: 0.2s all ease-out;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  position: absolute;
+  height: 60%;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  top: 0;
+}
+.card {
+  margin-right: 25px;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0, 1);
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0px 13px 10px -7px rgba(0, 0, 0, 0.1);
+}
+.card:hover {
+  transform: scale(1.03);
+}
+
+.card__info {
+  position: relative;
+  top: 60%;
+  z-index: 2;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  padding: 16px 24px 24px 24px;
+}
+
+.card__category {
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 2px;
+  font-weight: 500;
+  color: #868686;
+}
+
+.card__title {
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.card__by {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.card__author {
+  font-weight: 600;
+  text-decoration: none;
+  color: #ad7d52;
+}
+
+.card:hover .card__img--hover {
+  height: 100%;
+  opacity: 0.3;
 }
 
 /*//////////////////////////////////////////////*/

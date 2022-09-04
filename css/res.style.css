@@ -66,20 +66,17 @@
     width: auto;
     padding: 20px;
   }
-  .port-gallery {
-    overflow-x: scroll;
-    scroll-snap-type: x mandatory;
+  .card__category {
+    font-size: 10px;
   }
-  .item {
-    scroll-snap-align: start;
-    scroll-snap-stop: always;
-    width: 90%;
-    transform: none;
-    margin: 20px;
+  .card__title {
+    font-size: 16px;
   }
-
-  .item::after {
-    display: none;
+  .card__by {
+    font-size: 10px;
+  }
+  .gallery {
+    margin: 100px 50px;
   }
 }
 
@@ -132,6 +129,9 @@
 
   .logo-p-1 {
     color: black;
+  }
+  .gallery {
+    margin: 50px 50px;
   }
 }
 
@@ -376,7 +376,14 @@
   }
 }
 
-@media screen and (max-width: 343px) {
+@media screen and (max-width: 768px) {
+  .gallery {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 360px) {
   .hobbies {
     padding: 15px 0 0 0;
   }
@@ -387,5 +394,13 @@
     top: 50%;
     transform: translateY(-50%);
     padding: 11px 0;
+  }
+
+  .gallery {
+    display: flex;
+  }
+
+  .sc5 {
+    padding-top: 50px;
   }
 }
