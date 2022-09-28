@@ -1,625 +1,768 @@
 <!DOCTYPE html>
 <html class="loading" lang="en">
-<head   >
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="apple-touch-icon" sizes="180x180" href="/Image/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/Image/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/Image/favicon-16x16.png">
-    <link rel="manifest" href="/Image/site.webmanifest">
-    
-    
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/Image/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/Image/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/Image/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/Image/site.webmanifest" />
+
     <title>EiSaj Portfolio</title>
 
-    
+    <!--///////////////////////////////////////-->
+
+    <!--      Font Link      -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Roboto:wght@100&display=swap"
+      rel="stylesheet"
+    />
 
     <!--///////////////////////////////////////-->
 
     <!--      CSS SECTOR      -->
 
-
-
     <!-- Preload -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-   
 
     <!-- Particles -->
-    <link rel="stylesheet" href="./css/particles.css">
-
+    <link rel="stylesheet" href="./css/particles.css" />
 
     <!-- Main CSS -->
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/res.style.css">
-
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/res.style.css" />
 
     <!-- End CSS SECTOR -->
-    
-
-
-
-</head>
-<body class="loading">
+  </head>
+  <body class="loading">
     <div class="preloader">
-        <div class="sk-folding-cube">
-            <div class="sk-cube1 sk-cube"></div>
-            <div class="sk-cube2 sk-cube"></div>
-            <div class="sk-cube4 sk-cube"></div>
-            <div class="sk-cube3 sk-cube"></div>
-        </div>
+      <div class="sk-folding-cube">
+        <div class="sk-cube1 sk-cube"></div>
+        <div class="sk-cube2 sk-cube"></div>
+        <div class="sk-cube4 sk-cube"></div>
+        <div class="sk-cube3 sk-cube"></div>
+      </div>
     </div>
-
-       
 
     <!-- NavBar -->
     <header>
-        <nav class="navbar responsive-bar" id="navbar">
-            <div id='logo-div'class="logo">
-                    <p id="logoP" class="logoP opc1">EiSaj.</p>
-            </div>
-            <span data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle collapsed" id="js-navbar-toggle">
-                <i id='fa-bars'  class="fas fa-bars fa-lg"></i>
-            </span>
-            <div id="navbarCollapse" class="navbar-collapse nav-div">
-                <ul id="ul" class='navigation nav-links'>
-                    <li><a id="link1" class="scroll nav-link" href="#home">Home</a></li>
-                    <li><a id="link2" class="scroll nav-link" href="#about">About</a></li>
-                    <li><a id="link3" class="scroll nav-link" href="#skills">Skills</a></li>
-                    <li><a id="link5" class="scroll nav-link" href="#portfolio">Portfolio</a></li>
-                    <li><a id="link4" class="scroll nav-link" href="#contact">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
+      <nav class="navbar responsive-bar" id="navbar">
+        <div id="logo-div" class="logo">
+          <p id="logoP" class="logoP opc1">EiSaj.</p>
+        </div>
+        <span
+          data-target="#navbarCollapse"
+          data-toggle="collapse"
+          class="navbar-toggle collapsed"
+          id="js-navbar-toggle"
+        >
+          <i id="fa-bars" class="fas fa-bars fa-lg"></i>
+        </span>
+        <div id="navbarCollapse" class="navbar-collapse nav-div">
+          <ul id="ul" class="navigation nav-links">
+            <li><a id="link1" class="scroll nav-link" href="#home">Home</a></li>
+            <li>
+              <a id="link2" class="scroll nav-link" href="#about">About</a>
+            </li>
+            <li>
+              <a id="link3" class="scroll nav-link" href="#skills">Skills</a>
+            </li>
+            <li>
+              <a id="link5" class="scroll nav-link" href="#portfolio"
+                >Portfolio</a
+              >
+            </li>
+            <li>
+              <a id="link4" class="scroll nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </header>
-
-
-
 
     <!--///////////////////////////////////////-->
 
     <!--     SECTOR 1     -->
 
-
     <!-- Particles -->
-    <div id="particles-js"></div> 
-   
-    <section id='home' class="sc1">
-        <div class="sc1-main-div">
-            <div data-aos-delay="800" data-aos-duration="1300"data-aos="fade" class="greeting-div">
-                <p >Hi! I'm Erlindi Isaj.</p>
-            </div>
-            <div data-aos="fade" data-aos-delay="1000" data-aos-duration="1300" id="container" class="presentation-div typewriter">
-                    <div class=".presentation-div-p" id="text"></div><div id="cursor"></div>
-            </div>
-            <div class="social" data-aos-delay="1500" data-aos-duration="1300" data-aos="fade-up">
-                <span> <a class='social-a' target='_blank' href="https://github.com/erlindiisaj/"><i id='git' class="network fab fa-github fa-lg"></i></a></span>
-                <span> <a class='social-a' target='_blank' href="https://www.linkedin.com/in/erlindiisaj/"><i id='tw' class="network fab fa-linkedin fa-lg"></i></a></span>
-                <span> <a class='social-a' target='_blank' href="https://www.instagram.com/erlindi_isaj"><i id='in' class="network fab fa-instagram fa-lg"></i></a></span>    
-                    <span> <a class='social-a' target='_blank'href="https://dev.to/erlindiisaj"><i id='fb' class="network fab fa-dev fa-brands fa-lg"></i></a></span>
-            </div>
+    <div id="particles-js" class="particles-js"></div>
+
+    <section id="home" class="sc1">
+      <div class="sc1-main-div">
+        <div
+          data-aos-delay="800"
+          data-aos-duration="1300"
+          data-aos="fade"
+          class="greeting-div"
+        >
+          <p>Hi! I'm Erlindi Isaj.</p>
         </div>
+        <div
+          data-aos="fade"
+          data-aos-delay="1000"
+          data-aos-duration="1300"
+          id="container"
+          class="presentation-div typewriter"
+        >
+          <div class=".presentation-div-p" id="text"></div>
+          <div id="cursor"></div>
+        </div>
+        <div
+          class="social"
+          data-aos-delay="1500"
+          data-aos-duration="1300"
+          data-aos="fade-up"
+        >
+          <span>
+            <a
+              class="social-a"
+              target="_blank"
+              href="https://github.com/erlindiisaj/"
+              ><i id="git" class="network fab fa-github fa-lg"></i></a
+          ></span>
+          <span>
+            <a
+              class="social-a"
+              target="_blank"
+              href="https://www.linkedin.com/in/erlindiisaj/"
+              ><i id="tw" class="network fab fa-linkedin fa-lg"></i></a
+          ></span>
+          <span>
+            <a
+              class="social-a"
+              target="_blank"
+              href="https://www.instagram.com/erlindi_isaj"
+              ><i id="in" class="network fab fa-instagram fa-lg"></i></a
+          ></span>
+          <span>
+            <a
+              class="social-a"
+              target="_blank"
+              href="https://dev.to/erlindiisaj"
+              ><i id="fb" class="network fab fa-dev fa-brands fa-lg"></i></a
+          ></span>
+        </div>
+      </div>
     </section>
-
-
-
-
 
     <!--///////////////////////////////////////-->
 
     <!--     SECTOR 2     -->
 
+    <section id="about" class="sc2">
+      <div class="profile-div">
+        <img src="./Image/profile2.png" alt="profile" />
+      </div>
+      <div class="about-info-div">
+        <p
+          data-aos="fade"
+          data-aos-delay="50"
+          data-aos-duration="1000"
+          class="aboutme"
+        >
+          About Me.
+        </p>
 
-    <section id='about' class="sc2">
-        <div class="profile-div" >
-            <img src="./Image/profile2.png" alt="profile">
+        <p
+          class="aboutme-info"
+          data-aos="fade"
+          data-aos-delay="500"
+          data-aos-duration="1000"
+        >
+          I am <span class="name-span">Erlindi Isaj.</span>
+          I am a UI / UX Designer & Web Developer, and I'm very passionate and
+          dedicated to my work. With 5 years experience as a professional
+          graphic designer, I have acquired the skills and knowledge necessary
+          to make your project a success.
+        </p>
+
+        <div
+          class="personal-info"
+          data-aos="fade"
+          data-aos-delay="400"
+          data-aos-duration="800"
+        >
+          <p class="name prs-info">
+            NAME: <span class="info">Erlindi Isaj</span>
+          </p>
+          <p class="adress prs-info">
+            ADRESS: <span class="info">Shkoder, AL</span>
+          </p>
+          <p class="age prs-info">
+            AGE: <span class="info">20 Years Old</span>
+          </p>
+          <p class="phone prs-info">
+            PHONE: <span class="info">+355683836222</span>
+          </p>
+          <p class="email prs-info">
+            EMAIL: <span class="info">contact@erlindiisaj.com</span>
+          </p>
         </div>
-        <div class="about-info-div" >
-            <p data-aos="fade" data-aos-delay="50" data-aos-duration="1000" class="aboutme">
-                About Me.
-            </p>
 
-            <p class="aboutme-info" data-aos="fade" data-aos-delay="500" data-aos-duration="1000">
-                    I am <span class="name-span">Erlindi Isaj.</span> 
-                    I am a UI / UX Designer & Web Developer, 
-                    and I'm very passionate and dedicated to my work. 
-                    With 5 years experience as a professional
-                    graphic designer, I have acquired the skills
-                    and knowledge necessary to make your project
-                    a success.
-            </p>
-
-            <div class="personal-info" data-aos="fade" data-aos-delay="400" data-aos-duration="800">
-                <p class="name prs-info">NAME: <span class="info">Erlindi Isaj</span></p>
-                <p class="adress prs-info">ADRESS: <span class="info">Shkoder, AL</span></p>
-                <p class="age prs-info">AGE: <span class="info">20 Years Old</span></p>
-                <p class="phone prs-info">PHONE: <span class="info">+355683836222</span></p>
-                <p class="email prs-info">EMAIL: <span class="info">contact@erlindiisaj.com</span></p>
-            </div>
-            
-            <div class="btn1-div" data-aos="fade-left" data-aos-delay="50"  data-aos-duration="1300">
-                <a download="CV-ErlindiIsaj" href="./CV-ErlindiIsaj.docx" class="download-cv-btn">
-                    <em> </em> 
-                    <span>
-                        Download CV
-                    </span>
-                </a>       
-            </div>
+        <div
+          class="btn1-div"
+          data-aos="fade-left"
+          data-aos-delay="50"
+          data-aos-duration="1300"
+        >
+          <a
+            download="CV-ErlindiIsaj"
+            href="./CV-ErlindiIsaj.docx"
+            class="download-cv-btn"
+          >
+            <em> </em>
+            <span> Download CV </span>
+          </a>
         </div>
-        <div class="hobbies" >
-            
-            <div class="txt-hobbies" data-aos="fade-up" data-aos-delay="100" data-aos-offset='10'>
-                <p>
-                    Hobbies & Interests.
-                </p>
-            </div>
-            
-            <div class="nen-hobbies">
-                <div class="card-container" >
-                    <div class="card-hobbies" data-aos="zoom-in" data-aos-duration="800">
-                        <p class='hobbies-btn'>
-                            Photography
-                            <span class="hobbies-span"></span>
-                            <span class="hobbies-span"></span>
-                            <span class="hobbies-span"></span>
-                            <span class="hobbies-span"></span>
-                        </p>
-                    </div>
-                    <div class="card-hobbies" data-aos="zoom-in" data-aos-duration="800">
-                            <p class='hobbies-btn'>
-                                Driving
-                                <span class="hobbies-span"></span>
-                                <span class="hobbies-span"></span>
-                                <span class="hobbies-span"></span>
-                                <span class="hobbies-span"></span>
-                            </p>
-                    </div>
-                    <div class="card-hobbies" data-aos="zoom-in" data-aos-duration="800">
-                        <p class='hobbies-btn'>
-                           Football
-                        <span class="hobbies-span"></span>
-                        <span class="hobbies-span"></span>
-                        <span class="hobbies-span"></span>
-                        <span class="hobbies-span"></span>
-                        </p>
-                    </div>
-                    <div class="card-hobbies" data-aos="zoom-in" data-aos-duration="800">
-                        <p class='hobbies-btn'>
-                            Reading
-                            <span class="hobbies-span"></span>
-                            <span class="hobbies-span"></span>
-                            <span class="hobbies-span"></span>
-                            <span class="hobbies-span"></span>
-                        </p>
-                    </div>
-                </div>
-                <div class="card-container" data-aos="zoom-in" data-aos-duration="800">
-                        <div class="card-hobbies">
-                            <p class='hobbies-btn'>
-                               Music
-                                <span class="hobbies-span"></span>
-                                <span class="hobbies-span"></span>
-                                <span class="hobbies-span"></span>
-                                <span class="hobbies-span"></span>
-                            </p>
-                        </div>
-                        <div class="card-hobbies" data-aos="zoom-in" data-aos-duration="800">
-                                <p class='hobbies-btn'>
-                                   Writing
-                                    <span class="hobbies-span"></span>
-                                    <span class="hobbies-span"></span>
-                                    <span class="hobbies-span"></span>
-                                    <span class="hobbies-span"></span>
-                                </p>
-                        </div>
-                        <div class="card-hobbies" data-aos="zoom-in" data-aos-duration="800">
-                            <p class='hobbies-btn' >
-                               Travelling
-                            <span class="hobbies-span"></span>
-                            <span class="hobbies-span"></span>
-                            <span class="hobbies-span"></span>
-                            <span class="hobbies-span"></span>
-                            </p>
-                        </div>
-                        <div class="card-hobbies" data-aos="zoom-in" data-aos-duration="800"    >
-                            <p class='hobbies-btn'>
-                                Gaming
-                                <span class="hobbies-span"></span>
-                                <span class="hobbies-span"></span>
-                                <span class="hobbies-span"></span>
-                                <span class="hobbies-span"></span>
-                            </p>
-                        </div>
-                    </div>
-            </div>
-            
-
+      </div>
+      <div class="hobbies">
+        <div
+          class="txt-hobbies"
+          data-aos="fade-up"
+          data-aos-delay="100"
+          data-aos-offset="10"
+        >
+          <p>Hobbies & Interests.</p>
         </div>
+
+        <div class="nen-hobbies">
+          <div class="card-container">
+            <div
+              class="card-hobbies"
+              data-aos="zoom-in"
+              data-aos-duration="800"
+            >
+              <p class="hobbies-btn">
+                Photography
+                <span class="hobbies-span"></span>
+                <span class="hobbies-span"></span>
+                <span class="hobbies-span"></span>
+                <span class="hobbies-span"></span>
+              </p>
+            </div>
+            <div
+              class="card-hobbies"
+              data-aos="zoom-in"
+              data-aos-duration="800"
+            >
+              <p class="hobbies-btn">
+                Driving
+                <span class="hobbies-span"></span>
+                <span class="hobbies-span"></span>
+                <span class="hobbies-span"></span>
+                <span class="hobbies-span"></span>
+              </p>
+            </div>
+            <div
+              class="card-hobbies"
+              data-aos="zoom-in"
+              data-aos-duration="800"
+            >
+              <p class="hobbies-btn">
+                Football
+                <span class="hobbies-span"></span>
+                <span class="hobbies-span"></span>
+                <span class="hobbies-span"></span>
+                <span class="hobbies-span"></span>
+              </p>
+            </div>
+            <div
+              class="card-hobbies"
+              data-aos="zoom-in"
+              data-aos-duration="800"
+            >
+              <p class="hobbies-btn">
+                Reading
+                <span class="hobbies-span"></span>
+                <span class="hobbies-span"></span>
+                <span class="hobbies-span"></span>
+                <span class="hobbies-span"></span>
+              </p>
+            </div>
+          </div>
+          <div
+            class="card-container"
+            data-aos="zoom-in"
+            data-aos-duration="800"
+          >
+            <div class="card-hobbies">
+              <p class="hobbies-btn">
+                Music
+                <span class="hobbies-span"></span>
+                <span class="hobbies-span"></span>
+                <span class="hobbies-span"></span>
+                <span class="hobbies-span"></span>
+              </p>
+            </div>
+            <div
+              class="card-hobbies"
+              data-aos="zoom-in"
+              data-aos-duration="800"
+            >
+              <p class="hobbies-btn">
+                Writing
+                <span class="hobbies-span"></span>
+                <span class="hobbies-span"></span>
+                <span class="hobbies-span"></span>
+                <span class="hobbies-span"></span>
+              </p>
+            </div>
+            <div
+              class="card-hobbies"
+              data-aos="zoom-in"
+              data-aos-duration="800"
+            >
+              <p class="hobbies-btn">
+                Travelling
+                <span class="hobbies-span"></span>
+                <span class="hobbies-span"></span>
+                <span class="hobbies-span"></span>
+                <span class="hobbies-span"></span>
+              </p>
+            </div>
+            <div
+              class="card-hobbies"
+              data-aos="zoom-in"
+              data-aos-duration="800"
+            >
+              <p class="hobbies-btn">
+                Gaming
+                <span class="hobbies-span"></span>
+                <span class="hobbies-span"></span>
+                <span class="hobbies-span"></span>
+                <span class="hobbies-span"></span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
-
 
     <!--///////////////////////////////////////-->
 
     <!--     SECTOR 3     -->
 
-
-    <section id='skills'class="sc3">
-        <div class="background-sc3" >
-            <div class="funFact">
-                <h2><span id="counter"class="counter count">448</span>+</h2>
-                <p>Projects Completed</p>
-            </div>
-            <div class="funFact">
-                <h2><span id='counter1' class="counter count">50</span>+</h2>
-                <p>Happy Clients</p>
-            </div>
-            <div class="funFact">
-                <h2><span id='counter2'  class="counter count">3540</span>+</h2>
-                <p>Lines of Code</p>
-            </div>
-            <div class="funFact">
-                <h2><span id='counter3' class="counter count">20</span>+</h2>
-                <p>Awards Achieved</p>
-            </div>
+    <section id="skills" class="sc3">
+      <div class="background-sc3">
+        <div class="funFact">
+          <h2><span id="counter" class="counter count">448</span>+</h2>
+          <p>Projects Completed</p>
         </div>
-        
-       
-        <div class="container"  >
-            <div class="box">
-                <div class="content">
-                    <h2><i class="fas fa-desktop"></i></h2>
-                    <h3>Web Developer</h3>
-                    <p>WD includes many types of web content creation. Including hand web coding , building a website etc.</p>
-                </div>
-            </div>
-            <div class="box">
-                <div class="content">
-                    <h2><i class="fas fa-drafting-compass"></i></h2>
-                    <h3>Design</h3>
-                    <p>We work with development teams or managers for keeping the site up-to-date with a special graphic design.</p>
-                </div>
-            </div>
-            <div class="box">
-                <div class="content">
-                    <h2><i class="fas fa-mobile-alt"></i></h2>
-                    <h3>Responsive Design</h3>
-                    <p>A website needs to be user-friendly on a smartphone. If it is not, your brand may be losing out on leads and sales</p>
-                </div>
-            </div>
-            <div class="box">
-                <div class="content">
-                    <h2><i class="fas fa-camera"></i></h2>
-                    <h3>Photography</h3>
-                    <p>Photography is so powerful that it allows you to bring experiences to others in the form of images as they really are.</p>
-                </div>
-            </div>
+        <div class="funFact">
+          <h2><span id="counter1" class="counter count">50</span>+</h2>
+          <p>Happy Clients</p>
         </div>
-
-
-
-        <div class="progress-main-div">
-            <div class="first-div">
-                <div class="container-skills">
-                        <div class="label-sk-d">
-                            <div class="label-sk">
-                                <h3>Html</h3>
-                                <span class="percent">90%</span>
-                                <div style="clear:both"></div>
-                            </div>
-                            <div class="bar">
-                                <div class="progress" style="width: 90%;"></div>
-                            </div>
-                        </div>
-                        <div class="label-sk-d">
-                            <div class="label-sk">
-                                <h3>CSS</h3>
-                                <span class="percent">90%</span>
-                                <div style="clear:both"></div>
-                            </div>
-                            <div class="bar">
-                                <div class="progress" style="width: 90%;"></div>
-                            </div>
-                        </div>
-                        <div class="label-sk-d">
-                            <div class="label-sk">
-                                <h3>JavaScript</h3>
-                                <span class="percent">80%</span>
-                                <div style="clear:both"></div>
-                            </div>
-                            <div class="bar">
-                                <div class="progress" style="width: 80%;"></div>
-                            </div>
-                        </div>
-                        <div class="label-sk-d">
-                            <div class="label-sk">
-                                <h3>React</h3>
-                                <span class="percent">82%</span>
-                                <div style="clear:both"></div>
-                            </div>
-                            <div class="bar">
-                                <div class="progress" style="width: 82%;"></div>
-                            </div>
-                        </div>
-                    </div>
-            </div>
-            <div class="second-div">
-                        <div class="container-skills1">
-                                <div class="label-sk-d">
-                                    <div class="label-sk">
-                                        <h3>Node.js</h3>
-                                        <span class="percent">50%</span>
-                                        <div style="clear:both"></div>
-                                    </div>
-                                    <div class="bar">
-                                        <div class="progress" style="width: 50%;">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="label-sk-d">
-                                    <div class="label-sk">
-                                        <h3>PostgreSQL</h3>
-                                        <span class="percent">70%</span>
-                                        <div style="clear:both"></div>
-                                    </div>
-                                    <div class="bar">
-                                        <div class="progress" style="width: 70%;"></div>
-                                    </div>
-                                </div>
-                                <div class="label-sk-d">
-                                    <div class="label-sk">
-                                        <h3>Photoshop</h3>
-                                        <span class="percent">80%</span>
-                                        <div style="clear:both"></div>
-                                    </div>
-                                    <div class="bar">
-                                        <div class="progress" style="width: 80%;"></div>
-                                    </div>
-                                </div>
-                                <div class="label-sk-d">
-                                    <div class="label-sk">
-                                        <h3>C++</h3>
-                                        <span class="percent">30%</span>
-                                        <div style="clear:both"></div>
-                                    </div>
-                                    <div class="bar">
-                                        <div class="progress" style="width: 30%;"></div>
-                                    </div>
-                                </div>
-                        </div>
-            </div>
+        <div class="funFact">
+          <h2><span id="counter2" class="counter count">3540</span>+</h2>
+          <p>Lines of Code</p>
         </div>
-        
+        <div class="funFact">
+          <h2><span id="counter3" class="counter count">20</span>+</h2>
+          <p>Awards Achieved</p>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="box">
+          <div class="content">
+            <h2><i class="fas fa-desktop"></i></h2>
+            <h3>Web Developer</h3>
+            <p>
+              WD includes many types of web content creation. Including hand web
+              coding , building a website etc.
+            </p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="content">
+            <h2><i class="fas fa-drafting-compass"></i></h2>
+            <h3>Design</h3>
+            <p>
+              We work with development teams or managers for keeping the site
+              up-to-date with a special graphic design.
+            </p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="content">
+            <h2><i class="fas fa-mobile-alt"></i></h2>
+            <h3>Responsive Design</h3>
+            <p>
+              A website needs to be user-friendly on a smartphone. If it is not,
+              your brand may be losing out on leads and sales
+            </p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="content">
+            <h2><i class="fas fa-camera"></i></h2>
+            <h3>Photography</h3>
+            <p>
+              Photography is so powerful that it allows you to bring experiences
+              to others in the form of images as they really are.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="progress-main-div">
+        <div class="first-div">
+          <div class="container-skills">
+            <div class="label-sk-d">
+              <div class="label-sk">
+                <h3>Html</h3>
+                <span class="percent">90%</span>
+                <div style="clear: both"></div>
+              </div>
+              <div class="bar">
+                <div class="progress" style="width: 90%"></div>
+              </div>
+            </div>
+            <div class="label-sk-d">
+              <div class="label-sk">
+                <h3>CSS</h3>
+                <span class="percent">90%</span>
+                <div style="clear: both"></div>
+              </div>
+              <div class="bar">
+                <div class="progress" style="width: 90%"></div>
+              </div>
+            </div>
+            <div class="label-sk-d">
+              <div class="label-sk">
+                <h3>JavaScript</h3>
+                <span class="percent">80%</span>
+                <div style="clear: both"></div>
+              </div>
+              <div class="bar">
+                <div class="progress" style="width: 80%"></div>
+              </div>
+            </div>
+            <div class="label-sk-d">
+              <div class="label-sk">
+                <h3>React</h3>
+                <span class="percent">82%</span>
+                <div style="clear: both"></div>
+              </div>
+              <div class="bar">
+                <div class="progress" style="width: 82%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="second-div">
+          <div class="container-skills1">
+            <div class="label-sk-d">
+              <div class="label-sk">
+                <h3>Node.js</h3>
+                <span class="percent">50%</span>
+                <div style="clear: both"></div>
+              </div>
+              <div class="bar">
+                <div class="progress" style="width: 50%"></div>
+              </div>
+            </div>
+            <div class="label-sk-d">
+              <div class="label-sk">
+                <h3>PostgreSQL</h3>
+                <span class="percent">70%</span>
+                <div style="clear: both"></div>
+              </div>
+              <div class="bar">
+                <div class="progress" style="width: 70%"></div>
+              </div>
+            </div>
+            <div class="label-sk-d">
+              <div class="label-sk">
+                <h3>Photoshop</h3>
+                <span class="percent">80%</span>
+                <div style="clear: both"></div>
+              </div>
+              <div class="bar">
+                <div class="progress" style="width: 80%"></div>
+              </div>
+            </div>
+            <div class="label-sk-d">
+              <div class="label-sk">
+                <h3>C++</h3>
+                <span class="percent">30%</span>
+                <div style="clear: both"></div>
+              </div>
+              <div class="bar">
+                <div class="progress" style="width: 30%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
-
-
-    
     <!--///////////////////////////////////////-->
 
     <!--     SECTOR 4     -->
 
-    <section class="sc5"  id="portfolio">
-
-        <div class="portfolio-div">
-
-            <div class="port-text">
-                <div class="port-header">
-                    <p>
-                        Check my latest projects.
-                    </p>
-                </div>
-                <p class="port-quote">
-                    <p class="quote-p">I know the price of success: dedication, hard work</p>  <p class="quote-p">and an unremitting devotion to the things</p> 
-                    <p class="quote-p">you want to see happen.</p>
-            </div>
-
-            <div class="gallery">
-                <div class="first-column">
-                    <div class="project-container container-1">
-                        <article class="card card--1">
-                            <div class="card__img"></div>
-                            <a target="_blank" href="https://smartbrainapp-al.herokuapp.com/" class="card_link">
-                                <div class="card__img--hover"></div>
-                            </a>
-                            <div class="card__info">
-                                <span class="card__category"> React, Express JS, PostgreSQL </span>
-                                <h3 class="card__title">Smart Brain</h3>
-                                <span class="card__by">It uses similarity to identify the faces in a photo. You just paste a link of the photo on the app, and it will extract the information about the faces in the photo by using face recognition API. </span>
-                            </div>
-                        </article>
-                    </div>
-                    <div class="project-container container-2">
-                        <article class="card card--2">
-                            <div class="card__info-hover">
-                                <div class="card__clock-info">
-                                    
-                                </div>
-                                
-                            </div>
-                            <div class="card__img"></div>
-                            <a target="_blank" href="https://todolist-al.herokuapp.com/" class="card_link">
-                                <div class="card__img--hover"></div>
-                            </a>
-                            <div class="card__info">
-                               <span class="card__category"> Html, CSS, React, </span>
-                                <h3 class="card__title">To Do List</h3>
-                                <span class="card__by"> This app can help you get organized just by adding new tasks or deleting them when it is done just by a click.</span>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-                <div class="second-column">
-                    <div class="project-container container-4">
-                        <article class="card card--3">
-                            <div class="card__info-hover">
-                                <div class="card__clock-info">
-                                    
-                                </div>
-
-                            </div>
-                            <div class="card__img"></div>
-                            <a href="https://github.com/erlindiisaj/e-commerce" class="card_link">
-                                <div class="card__img--hover"></div>
-                            </a>
-                            <div class="card__info">
-                                <span class="card__category"> JavaScript, Sass, React, </span>
-                                <h3 class="card__title">E-Commerce Store</h3>
-                                <span class="card__by">Google In-Store is a platform allowing Google retail employees to report any issues with their store products. </span>
-                            </div>
-                        </article>
-                    </div>
-                    <div class="project-container container-3">
-                        <article class="card card--4">
-                            <div class="card__info-hover">
-                                <div class="card__clock-info">
-                                    
-                                </div>
-                                
-                            </div>
-                            <div class="card__img"></div>
-                            <a href="#" class="card_link">
-                                <div class="card__img--hover"></div>
-                            </a>
-                            <div class="card__info">
-                               <span class="card__category"> Html, CSS, JavaScript,</span>
-                                <h3 class="card__title">Google In-Store</h3>
-                                <span class="card__by">Google In-Store is a platform allowing Google retail employees to report any issues with their store products. Once an issue is reported. </span>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-            </div>
-            
-            
-
+    <section class="sc5" id="portfolio">
+      <div class="portfolio-div">
+        <div class="port-text">
+          <div class="port-header">
+            <p>Check my latest projects.</p>
+          </div>
+          <p class="port-quote"></p>
+          <p class="quote-p">
+            I know the price of success: dedication, hard work
+          </p>
+          <p class="quote-p">and an unremitting devotion to the things</p>
+          <p class="quote-p">you want to see happen.</p>
         </div>
 
-
+        <div class="gallery">
+          <div class="first-column">
+            <div class="project-container container-1">
+              <article class="card card--1">
+                <div class="card__img"></div>
+                <a
+                  target="_blank"
+                  href="https://smartbrainapp-al.herokuapp.com/"
+                  class="card_link"
+                >
+                  <div class="card__img--hover"></div>
+                </a>
+                <div class="card__info">
+                  <span class="card__category">
+                    React, Express JS, PostgreSQL
+                  </span>
+                  <h3 class="card__title">Smart Brain</h3>
+                  <span class="card__by"
+                    >It uses similarity to identify the faces in a photo. You
+                    just paste a link of the photo on the app, and it will
+                    extract the information about the faces in the photo by
+                    using face recognition API.
+                  </span>
+                </div>
+              </article>
+            </div>
+            <div class="project-container container-2">
+              <article class="card card--2">
+                <div class="card__info-hover">
+                  <div class="card__clock-info"></div>
+                </div>
+                <div class="card__img"></div>
+                <a
+                  target="_blank"
+                  href="https://todolist-al.herokuapp.com/"
+                  class="card_link"
+                >
+                  <div class="card__img--hover"></div>
+                </a>
+                <div class="card__info">
+                  <span class="card__category"> Html, CSS, React, </span>
+                  <h3 class="card__title">To Do List</h3>
+                  <span class="card__by">
+                    This app can help you get organized just by adding new tasks
+                    or deleting them when it is done just by a click.</span
+                  >
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="second-column">
+            <div class="project-container container-4">
+              <article class="card card--3">
+                <div class="card__info-hover">
+                  <div class="card__clock-info"></div>
+                </div>
+                <div class="card__img"></div>
+                <a
+                  href="https://github.com/erlindiisaj/e-commerce"
+                  class="card_link"
+                >
+                  <div class="card__img--hover"></div>
+                </a>
+                <div class="card__info">
+                  <span class="card__category"> JavaScript, Sass, React, </span>
+                  <h3 class="card__title">E-Commerce Store</h3>
+                  <span class="card__by"
+                    >Google In-Store is a platform allowing Google retail
+                    employees to report any issues with their store products.
+                  </span>
+                </div>
+              </article>
+            </div>
+            <div class="project-container container-3">
+              <article class="card card--4">
+                <div class="card__info-hover">
+                  <div class="card__clock-info"></div>
+                </div>
+                <div class="card__img"></div>
+                <a href="#" class="card_link">
+                  <div class="card__img--hover"></div>
+                </a>
+                <div class="card__info">
+                  <span class="card__category"> Html, CSS, JavaScript,</span>
+                  <h3 class="card__title">Google In-Store</h3>
+                  <span class="card__by"
+                    >Google In-Store is a platform allowing Google retail
+                    employees to report any issues with their store products.
+                    Once an issue is reported.
+                  </span>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     <!--///////////////////////////////////////-->
 
     <!--     SECTOR 5     -->
 
-    
-    
-    <section id='contact' class="sc4">
-        <div class="send-msg" >
-            <p>
-                SEND ME A MESSAGE! 
-            </p> 
+    <section id="contact" class="sc4">
+      <div class="send-msg">
+        <p>SEND ME A MESSAGE!</p>
+      </div>
+
+      <div class="contact-info">
+        <h2>Getting in touch is easy.</h2>
+        <div class="contact-info-txt">
+          <p>
+            Shkoder, Albania <br />
+            <span class="dobrac"> DOBRAC </span>
+          </p>
+          <p>+355683836222</p>
+          <p>contact@erlindiisaj.com</p>
         </div>
 
-        <div class="contact-info" >
-            <h2>Getting in touch is easy.</h2>
-                <div class="contact-info-txt">
-                    <p>Shkoder, Albania <br> <span class="dobrac"> DOBRAC </span> </p>
-                    <p>+355683836222</p>
-                    <p>contact@erlindiisaj.com</p>
-                </div>
-            
-            <div class="contact-social">
-                <span>  <a class='social-a1' target='_blank' href="https://github.com/erlindiisaj/"><i id='git1' class="fab fa-github fa-2x"></i></a></span>
-                <span> <a class='social-a1' target='_blank' href="https://www.linkedin.com/in/erlindiisaj/"> <i id='tw1' class="fab fa-linkedin fa-2x"></i></a></span>
-                <span> <a class='social-a1' target='_blank' href="https://www.instagram.com/erlindi_isaj/"><i id='in1' class="fab fa-instagram fa-2x"></i></a></span>    
-                <span> <a class='social-a1' target='_blank'href="https://dev.to/erlindiisaj"><i id='fb1' class="fab fa-dev fa-brands fa-2x"></i></a></span>
-            </div>
+        <div class="contact-social">
+          <span>
+            <a
+              class="social-a1"
+              target="_blank"
+              href="https://github.com/erlindiisaj/"
+              ><i id="git1" class="fab fa-github fa-2x"></i></a
+          ></span>
+          <span>
+            <a
+              class="social-a1"
+              target="_blank"
+              href="https://www.linkedin.com/in/erlindiisaj/"
+            >
+              <i id="tw1" class="fab fa-linkedin fa-2x"></i></a
+          ></span>
+          <span>
+            <a
+              class="social-a1"
+              target="_blank"
+              href="https://www.instagram.com/erlindi_isaj/"
+              ><i id="in1" class="fab fa-instagram fa-2x"></i></a
+          ></span>
+          <span>
+            <a
+              class="social-a1"
+              target="_blank"
+              href="https://dev.to/erlindiisaj"
+              ><i id="fb1" class="fab fa-dev fa-brands fa-2x"></i></a
+          ></span>
         </div>
+      </div>
 
-        <div class="form" >
-            <form action="https://formspree.io/mpzrjajy" method="POST">
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="_replyto" placeholder="Your Email" required>
+      <div class="form">
+        <form action="https://formspree.io/mpzrjajy" method="POST">
+          <input type="text" name="name" placeholder="Your Name" required />
+          <input
+            type="email"
+            name="_replyto"
+            placeholder="Your Email"
+            required
+          />
 
-                <div class="txt-input">
-                    <input placeholder="We'd love to work with you!" name="message" id="message" required>
-                </div>
-                <button  name="submit" type="submit" >SEND MESSAGE</button>
-            </form>
-            </form>
-        </div>
-        
-        
+          <div class="txt-input">
+            <input
+              placeholder="We'd love to work with you!"
+              name="message"
+              id="message"
+              required
+            />
+          </div>
+          <button name="submit" type="submit">SEND MESSAGE</button>
+        </form>
+      </div>
     </section>
-
 
     <!--///////////////////////////////////////-->
 
-
     <footer>
-        <small> Copyright &copy; 2022 EiSaj. Designed and created by Erlindi Isaj.</small>
+      <small>
+        Copyright &copy; 2022 EiSaj. Designed and created by Erlindi
+        Isaj.</small
+      >
     </footer>
-    
 
-  <!--///////////////////////////////////////-->
+    <!--///////////////////////////////////////-->
 
     <!--     JS SECTOR     -->
-    
 
     <!-- Preload -->
 
-
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    
+
     <script>
-        AOS.init({
-            // Global settings:
-            disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
-            startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
-            initClassName: 'aos-init', // class applied after initialization
-            animatedClassName: 'aos-animate', // class applied on animation
-            useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
-            disableMutationObserver: false, // disables automatic mutations' detections (advanced)
-            debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
-            throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
-            
+      AOS.init({
+        // Global settings:
+        disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+        startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+        initClassName: 'aos-init', // class applied after initialization
+        animatedClassName: 'aos-animate', // class applied on animation
+        useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+        disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+        debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+        throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
 
-            // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
-            offset: 100, // offset (in px) from the original trigger point
-            delay: 100, // values from 0 to 3000, with step 50ms
-            duration: 500, // values from 0 to 3000, with step 50ms
-            easing: 'ease', // default easing for AOS animations
-            once: false, // whether animation should happen only once - while scrolling down
-            mirror: false, // whether elements should animate out while scrolling past them
-            anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
-
-            });
+        // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+        offset: 100, // offset (in px) from the original trigger point
+        delay: 100, // values from 0 to 3000, with step 50ms
+        duration: 500, // values from 0 to 3000, with step 50ms
+        easing: 'ease', // default easing for AOS animations
+        once: false, // whether animation should happen only once - while scrolling down
+        mirror: false, // whether elements should animate out while scrolling past them
+        anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+      });
     </script>
-    
-    
+
     <!-- jQuery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    
-    
-    <!-- Particles.js --> 
-    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-    <!-- <script src="./js/particles.min.js"></script> -->
-    
-    
+
+    <!-- Particles.js -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script> -->
+    <script src="./js/particles.min.js"></script>
 
     <!-- Font Awesome -->
-    <script src="https://kit.fontawesome.com/ab51d65b68.js" crossorigin="anonymous"></script>
-    
+    <script
+      src="https://kit.fontawesome.com/ab51d65b68.js"
+      crossorigin="anonymous"
+    ></script>
 
     <!-- Main JS -->
     <script src="./js/script.js"></script>
 
     <!-- End JS SECTOR -->
-
-
-</body>
+  </body>
 </html>
