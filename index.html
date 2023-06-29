@@ -23,8 +23,10 @@
     />
     <link rel="manifest" href="/Image/site.webmanifest" />
     <link rel="mask-icon" href="/Image/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
 
-    <title>EiSaj Portfolio</title>
+    <title>Erlindi Isaj</title>
 
     <!--///////////////////////////////////////-->
 
@@ -52,13 +54,6 @@
     <link rel="stylesheet" href="./css/res.style.css" />
 
     <!-- End CSS SECTOR -->
-
-    <!-- Adesense -->
-    <script
-      async
-      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5946098506392388"
-      crossorigin="anonymous"
-    ></script>
   </head>
   <body class="loading">
     <div class="preloader">
@@ -74,7 +69,7 @@
     <header>
       <nav class="navbar responsive-bar" id="navbar">
         <div id="logo-div" class="logo">
-          <p id="logoP" class="logoP opc1">EiSaj.</p>
+          <img src="/Image/Horizontal Logo.svg" id="logoP" class="logoP opc1" />
         </div>
         <span
           data-target="#navbarCollapse"
@@ -212,7 +207,7 @@
             NAME: <span class="info">Erlindi Isaj</span>
           </p>
           <p class="adress prs-info">
-            ADRESS: <span class="info">Shkoder, AL</span>
+            ADDRESS: <span class="info">Shkoder, AL</span>
           </p>
           <p class="age prs-info">
             AGE: <span class="info">20 Years Old</span>
@@ -339,7 +334,7 @@
               data-aos-duration="800"
             >
               <p class="hobbies-btn">
-                Travelling
+                Traveling
                 <span class="hobbies-span"></span>
                 <span class="hobbies-span"></span>
                 <span class="hobbies-span"></span>
@@ -718,10 +713,7 @@
     <!--///////////////////////////////////////-->
 
     <footer>
-      <small>
-        Copyright &copy; 2022 EiSaj. Designed and created by Erlindi
-        Isaj.</small
-      >
+      <small> Designed and created by Erlindi Isaj.</small>
     </footer>
 
     <!--///////////////////////////////////////-->
@@ -736,9 +728,9 @@
       AOS.init({
         // Global settings:
         disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
-        startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
-        initClassName: 'aos-init', // class applied after initialization
-        animatedClassName: 'aos-animate', // class applied on animation
+        startEvent: "DOMContentLoaded", // name of the event dispatched on the document, that AOS should initialize on
+        initClassName: "aos-init", // class applied after initialization
+        animatedClassName: "aos-animate", // class applied on animation
         useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
         disableMutationObserver: false, // disables automatic mutations' detections (advanced)
         debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
@@ -748,10 +740,10 @@
         offset: 100, // offset (in px) from the original trigger point
         delay: 100, // values from 0 to 3000, with step 50ms
         duration: 500, // values from 0 to 3000, with step 50ms
-        easing: 'ease', // default easing for AOS animations
+        easing: "ease", // default easing for AOS animations
         once: false, // whether animation should happen only once - while scrolling down
         mirror: false, // whether elements should animate out while scrolling past them
-        anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+        anchorPlacement: "top-bottom", // defines which position of the element regarding to window should trigger the animation
       });
     </script>
 
@@ -766,6 +758,14 @@
     <script
       src="https://kit.fontawesome.com/ab51d65b68.js"
       crossorigin="anonymous"
+    ></script>
+
+    <!-- LinkedIn JS -->
+    <script
+      src="https://platform.linkedin.com/badges/js/profile.js"
+      async
+      defer
+      type="text/javascript"
     ></script>
 
     <!-- Main JS -->

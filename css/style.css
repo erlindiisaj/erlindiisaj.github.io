@@ -224,10 +224,8 @@ nav ul li a:hover {
   position: absolute;
 }
 
-.logo p {
-  font-family: 'Poppins', sans-serif;
-  font-size: 30px;
-  font-weight: 900;
+#logoP {
+  width: 120px;
   margin: 5px;
   position: relative;
   z-index: 100000;
