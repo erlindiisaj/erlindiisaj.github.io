@@ -269,7 +269,10 @@
   .background-sc3 {
     height: auto;
     width: auto;
-    display: block;
+   display: block;
+   background-position: top center;
+  background-image: url(/Image/sc3-res.jpg);
+  background-size: 100vw auto;
   }
 
   .container {
