@@ -240,8 +240,7 @@
   }
 
   .aboutme-info {
-    text-align: justify;
-    text-justify: inter-word;
+    text-align: center;
     font-size: 14px;
   }
 
@@ -267,18 +266,14 @@
   }
 
   .background-sc3 {
-    height: auto;
-    width: auto;
-   display: block;
+  height: auto;
+  width: auto;
+  display: block;
   background-image: url(/Image/sc3-res.jpg);
-  -webkit-background-size: 100%; 
--moz-background-size: 100%; 
--o-background-size: 100%; 
-background-size: 100%; 
--webkit-background-size: cover; 
--moz-background-size: cover; 
--o-background-size: cover; 
-background-size: cover;
+    background-attachment: inherit;
+  -webkit-background-size: cover; 
+  -moz-background-size: cover; 
+  -o-background-size: cover; 
   }
 
   .container {
