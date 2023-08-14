@@ -315,7 +315,7 @@ nav ul li a:hover {
   align-items: flex-end;
 }
 
-.greeting-div p {
+.greeting-div h1 {
   font-family: 'Poppins', sans-serif;
   font-size: 38px;
   font-weight: 600;
@@ -577,10 +577,16 @@ nav ul li a:hover {
 
 .txt-hobbies {
   margin-bottom: 70px;
+
+}
+.txt-hobbies h1 {
   font-family: 'Poppins', sans-serif;
   font-size: 20px;
   font-weight: 500;
 }
+
+
+
 
 .card-container {
   display: flex;
@@ -817,7 +823,7 @@ nav ul li a:hover {
 .box:hover .content h2 {
   top: -20px;
 }
-.box .content h3 {
+.box .content h1 {
   margin: 0;
   padding: 0;
   position: absolute;

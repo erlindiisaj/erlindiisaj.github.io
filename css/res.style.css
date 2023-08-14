@@ -32,7 +32,7 @@
     height: auto;
   }
 
-  .box .content h3 {
+  .box .content h1 {
     font-size: 18px;
     top: -30px;
   }
@@ -186,7 +186,7 @@
     color: black;
   }
 
-  .greeting-div p {
+  .greeting-div h1 {
     font-size: 20px;
   }
 
@@ -227,6 +227,9 @@
 
   .txt-hobbies {
     margin: 50px 0;
+  }
+
+  .txt-hobbies h1 {
     font-size: 18px;
   }
 
