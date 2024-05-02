@@ -32,7 +32,7 @@
     height: auto;
   }
 
-  .box .content h1 {
+  .box .content h3 {
     font-size: 18px;
     top: -30px;
   }
@@ -229,7 +229,7 @@
     margin: 50px 0;
   }
 
-  .txt-hobbies h1 {
+  .txt-hobbies h3 {
     font-size: 18px;
   }
 
