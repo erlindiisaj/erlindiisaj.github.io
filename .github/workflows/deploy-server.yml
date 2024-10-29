@@ -23,8 +23,8 @@ jobs:
           SERVER_IP: ${{ secrets.SERVER_IP }}
           SERVER_USER: ${{ secrets.SERVER_USER }}
         run: |
-          ssh $SERVER_USER@$SERVER_IP << 'EOF'
+          ssh -T $SERVER_USER@$SERVER_IP << 'EOF'
             cd /var/www/site
             git pull origin main
-            python3 -m http.server 80
+            python3 -m http.server 8099
           EOF
