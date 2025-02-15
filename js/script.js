@@ -151,10 +151,9 @@ $(window).resize(function () {
   });
 var _INTERVAL_VAL,
   _CONTENT = [
-    "I'm Web Developer.",
-    "I'm not a great programmer",
-    "I'm just a good programmer",
-    'with great habits.',
+    "I'm a programmer;",
+    "I solve problems you didn't know you had,",
+    "in ways you don't understand!",
   ],
   _PART = 0,
   _PART_INDEX = 0,
